@@ -25,13 +25,12 @@ Déconstruction sur comment un nettoyeur de piscines automatique fonctionne.
 
 ### Autres inspirations :
 
-### IDÉE 2 : 
-- Vapoteuse : How it's made?
+### Animation 01 : 
+- Objet central : peu importe comment l'utilisateur scroll, l'élément reste au centre de la page. Animations basées autour 
+- [Cafetière au centre du hero de ce site](https://www.wmf-coffeemachines.com/en_com/products/fully-automatic-coffee-machines/wmf-5000-s-plus/)
 ---
-Déconstruction sur comment une vapoteuse  fonctionne.
 
-
-### IDÉE 3 :
-- Tondeuse à gazon électrique : How it's made?
+### Animation 02 :
+- Objet composé de plusieurs micro-éléments qui chacun ont des micros-animations.
+- [Montage de pièces](https://www.awwwards.com/inspiration/scroll-hhhusher)
 ---
-Déconstruction sur comment une tondeuse à gazon électrique fonctionne.
