@@ -14,7 +14,7 @@
 
 ## 2. Le storyboard
 
-### [Lien storyboard figma]()
+### [Lien storyboard figma](https://www.figma.com/design/eXdVAaMqdKMf5feuMLG565/storyboard_recit_defilant?node-id=0-1&t=4QxCewEJf7d9aDZi-1)
 
 Le récit commence avec une courte histoire de l'évolution du nettoyeur. De sa conception et son premier modèle à son évoluion à travers le temps, on observe ensuite comment est composé un nettoyeur automatique. Le point culminant arrive lorsque la question de l'impact économique des nettoyeurs sur le marché des puises d'eau est posée. Une question ouverte est posée à la fin lorsque l'on voit les nettoyeurs posés en magasin, ce qui termine le récit.
 
