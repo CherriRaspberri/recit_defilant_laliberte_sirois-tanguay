@@ -22,13 +22,13 @@ Le récit commence avec une courte histoire de l'évolution du nettoyeur. De sa 
 
 | # | Titre | Ce que le chapitre raconte | Animation signature | Technique | Médias | Responsable |
 |---|---|---|---|---|---|---|
-| 1 | Le premier modèle inventé | | | | | Cédric |
+| 1 | Le premier modèle inventé | Avant l'arriver du nettoyeur comment on fessait ? Aussi, l'arrivé du nettoyeur de piscine et le pourquoi nous avons inventé cela. | Au défilement les objet ou personnage apparaise comme dans un projecteur ou une vieille publicité | Anime.js, CSS au défilement | Image en calques | Cédric |
 | 2 | L'évolution au fil du temps du nettoyeur | Le nettoyeur passe de gauche à droite de l'écran, laissant apparaître derrière lui une ligne du temps présentant l'évolution, du premier modèle, à différents designs, au modèle d'aujourd'hui. | Défilement d'objets de gauche à droite au scroll | Anime.js, CSS au défilement, IntersectionObserver | Images en calques | Olivier |
 | 3 | La construction du nettoyeur (pt. 01) | Le nettoyeur est épinglé au milieu de l'écran et sa coque se retire, laissant accès à une première pièce qui se détache. Du texte explicatif est affiché. Un tapis roulant passe en dessous de la pièce retirée. La pièce et le tapis roulant disparaissent en même temps que le texte. | Objets défilants au scroll et sticky par certains moments. | Anime.js, JSAP + ScrollTrigger | Section épinglée, images en calques | Olivier |
 | 4 | La construction du nettoyeur (pt. 02) | Le nettoyeur est épinglé au milieu de l'écran et sa coque est retirée, laissant accès à une deuxième pièce qui se détache. Du texte explicatif est affiché. | Objets défilants au scroll et sticky par certains moments. | Anime.js, JSAP + ScrollTrigger | Images en calques | Olivier |
 | 5 | La construction du nettoyeur (pt. 03) | Le nettoyeur est épinglé au milieu de l'écran et sa coque est retirée, laissant accès à une pièce qui se détache. Du texte explicatif est affiché. Vu que c'est la dernière pièce, toutes les pièces reviennent dans le nettoyeur. | Objets défilants au scroll et sticky par certains moments. | Anime.js, JSAP + ScrollTrigger | Images en calques | Olivier |
-| 6 | Le dilemme socio-économique | | | | | Cédric |
-| 7 | Conclusion et question de fermeture | | | | | Cédric |
+| 6 | Le dilemme socio-économique | Cette partie est pour montrer que l'évolution peut faire avancer la société tout en nuissant d'autre part de cette société. | Objet ou mot intéragi au défilement | Objets défilemetn et Anime.js | image en calque | Cédric |
+| 7 | Conclusion et question de fermeture | Il sert à fermer l'histoire et ouvrir sur un autre question a la fin pour avoir un penser après utilisation. | Objet ou mot intéragi au défilement | Objets défilemetn et Anime.js | image en calque | Cédric |
 
 Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, IntersectionObserver) apparaît au moins une fois.
 
@@ -40,9 +40,9 @@ Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, Inte
 | Chapitres 2 - 3 - 4 - 5 | Olivier | Contenu, intégration, animations |
 | Média animable (nettoyeur + pièces) : Image en calques | Olivier | Préparation et intégration |
 | Média animable (Piscine) : Image en calques | Olivier | Préparation et intégration |
-| Composant Vue : navigateur de chapitres | Cédric | |
-| *Fetch* externe et dataviz | Olivier | |
-| Chargement des chapitres (JSON) | Cédric | |
+| Composant Vue : navigateur de chapitres | Cédric | Défilement affect comment la page |
+| *Fetch* externe et dataviz | Olivier | Chercher le contenu exterieur  |
+| Chargement des chapitres (JSON) | Cédric | Animation entre les chapitres|
 | Structure commune (HTML, CSS de base, mise en page) | Ensemble | |
 
 ## 5. Le modèle de données
@@ -100,12 +100,12 @@ L'API sera choisie au cours du mer. 11 nov. Pour l'instant, décrivez l'idée.
 
 ## 9. Le calendrier de l'équipe (jusqu'au prototype du 13 nov.)
 
-| Semaine | [Prénom] | [Prénom] |
+| Semaine | [Prénom] | [Prénom] | 
 |---|---|---|
 | 23 oct. | | |
-| 28 oct. | Olivier | |
-| 4 nov. | Olivier | |
-| 11 nov. | Olivier | |
+| 28 oct. | Olivier fini la structure du site | Cédric fini les calques | 
+| 4 nov. | Olivier 1-2 chapitres | Cédric fini 1-2 chapitres  |
+| 11 nov. | Olivier faire les animations | Cédric s'occupe des sons |
 
 ## 10. Les risques et le plan B
 
