@@ -70,11 +70,11 @@ Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, Inte
 
 L'API sera choisie au cours du mer. 11 nov. Pour l'instant, décrivez l'idée.
 
-- **Chapitre** : [numéro]
-- **La question** à laquelle le moment répond : [ex. combien de fois la Terre a-t-elle tremblé cette semaine?]
-- **Genre de données souhaitées** : [ex. la température heure par heure dans une ville]
-- **La forme imaginée** : [chiffre géant / une unité par donnée / barres / échelle / ligne du temps / autre]
-- **Ce qu'elles racontent dans le récit** : [1 ou 2 phrases : la chute]
+- **Chapitre** : 1
+- **La question** à laquelle le moment répond : Depuis combien de temps est-ce que le nettoyeur automatique existe?
+- **Genre de données souhaitées** : La date actuelle
+- **La forme imaginée** : Une date géante 
+- **Ce qu'elles racontent dans le récit** : La date actuelle va servir de variable avec la date de création du nettoyeur automatique pour former un écart qui va démontrer depuis combien de temps les nettoyeurs automatiques existent. 
 - **Pistes d'API, si vous en avez trouvé** : [facultatif]
 
 ## 7. L'inventaire des médias
