@@ -23,10 +23,10 @@ Le récit commence avec une courte histoire de l'évolution du nettoyeur. De sa 
 | # | Titre | Ce que le chapitre raconte | Animation signature | Technique | Médias | Responsable |
 |---|---|---|---|---|---|---|
 | 1 | Le premier modèle inventé | | | | | Cédric |
-| 2 | L'évolution au fil du temps du nettoyeur | Le nettoyeur passe de gauche à droite de l'écran, laissant apparaître derrière lui une ligne du temps présentant l'évolution, du premier modèle, à différents designs, au modèle d'aujourd'hui. | Défilement d'objets de gauche à droite au scroll | CSS au défilement, IntersectionObserver | Images en calques | Olivier |
-| 3 | La construction du nettoyeur (pt. 01) | Le nettoyeur est épinglé au milieu de l'écran et sa coque se retire, laissant accès à une première pièce qui se détache. Du texte explicatif est affiché. Un tapis roulant passe en dessous de la pièce retirée. La pièce et le tapis roulant disparaissent en même temps que le texte. | Objets défilants au scroll et sticky par certains moments. | JSAP + ScrollTrigger | Section épinglée, images en calques | Olivier |
-| 4 | La construction du nettoyeur (pt. 02) | Le nettoyeur est épinglé au milieu de l'écran et sa coque est retirée, laissant accès à une deuxième pièce qui se détache. Du texte explicatif est affiché. | Objets défilants au scroll et sticky par certains moments. | JSAP + ScrollTrigger | Images en calques | Olivier |
-| 5 | La construction du nettoyeur (pt. 03) | Le nettoyeur est épinglé au milieu de l'écran et sa coque est retirée, laissant accès à une pièce qui se détache. Du texte explicatif est affiché. Vu que c'est la dernière pièce, toutes les pièces reviennent dans le nettoyeur. | Objets défilants au scroll et sticky par certains moments. | JSAP + ScrollTrigger | Images en calques | Olivier |
+| 2 | L'évolution au fil du temps du nettoyeur | Le nettoyeur passe de gauche à droite de l'écran, laissant apparaître derrière lui une ligne du temps présentant l'évolution, du premier modèle, à différents designs, au modèle d'aujourd'hui. | Défilement d'objets de gauche à droite au scroll | Anime.js, CSS au défilement, IntersectionObserver | Images en calques | Olivier |
+| 3 | La construction du nettoyeur (pt. 01) | Le nettoyeur est épinglé au milieu de l'écran et sa coque se retire, laissant accès à une première pièce qui se détache. Du texte explicatif est affiché. Un tapis roulant passe en dessous de la pièce retirée. La pièce et le tapis roulant disparaissent en même temps que le texte. | Objets défilants au scroll et sticky par certains moments. | Anime.js, JSAP + ScrollTrigger | Section épinglée, images en calques | Olivier |
+| 4 | La construction du nettoyeur (pt. 02) | Le nettoyeur est épinglé au milieu de l'écran et sa coque est retirée, laissant accès à une deuxième pièce qui se détache. Du texte explicatif est affiché. | Objets défilants au scroll et sticky par certains moments. | Anime.js, JSAP + ScrollTrigger | Images en calques | Olivier |
+| 5 | La construction du nettoyeur (pt. 03) | Le nettoyeur est épinglé au milieu de l'écran et sa coque est retirée, laissant accès à une pièce qui se détache. Du texte explicatif est affiché. Vu que c'est la dernière pièce, toutes les pièces reviennent dans le nettoyeur. | Objets défilants au scroll et sticky par certains moments. | Anime.js, JSAP + ScrollTrigger | Images en calques | Olivier |
 | 6 | Le dilemme socio-économique | | | | | Cédric |
 | 7 | Conclusion et question de fermeture | | | | | Cédric |
 
@@ -47,20 +47,24 @@ Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, Inte
 
 ## 5. Le modèle de données
 
-Un exemple d'objet chapitre, tel qu'il sera dans votre fichier JSON (inspirez-vous des [deux exemples plus haut](#le-modele-de-donnees-json)) :
-
 ```json
 {
   "id": 1,
-  "titre": "La forêt s'éveille",
-  "texte": "...",
+  "titre": "Chapitre 01 : l'histoire du nettoyeur automatique",
+  "textes": [
+      "...",
+      "...",
+      "..."
+  ],
   "medias": [
-    { "type": "image", "src": "assets/images/foret-fond.webp", "alt": "..." }
+    { "type": "image", "src": "assets/images/nettoyeur-automatique.webp", "alt": "..." }
   ]
 }
 ```
-
-[Ajoutez ou retirez des propriétés selon vos besoins, et expliquez en 1 ou 2 phrases vos choix.]
+- ID utilisé pour la recherche
+- Titre officiel utilisé pour le chapitre
+- Array de textes différents utilisés dans le chapitre
+- Array de médias différents utilisés dans le chapitre
 
 ## 6. La dataviz
 
@@ -77,12 +81,13 @@ L'API sera choisie au cours du mer. 11 nov. Pour l'instant, décrivez l'idée.
 
 | Média | Chapitre | Source (produit, banque, IA) | Format | Responsable |
 |---|---|---|---|---|
-| | | | | |
-
-Médias animables choisis :
-
-- [Prénom] : [image en calques / spritesheet / SVG préparé pour GSAP], pour le chapitre [numéro]
-- [Prénom] : [image en calques / spritesheet / SVG préparé pour GSAP], pour le chapitre [numéro]
+| Tuiles de piscine | Chapitre 2 | Illustrator (vectoriel) | .webp | Olivier |
+| Nettoyeur automatique (vue du dessus) | Chapitre 2 | Illustrator (vectoriel) en plusieurs calques pour plus de liberté d'animations | .webp | Olivier |
+| Nettoyeur automatique (vue 3/4) | Chapitres 3-4-5 | Illustrator (vectoriel) en plusieurs calques pour plus de liberté d'animations | .webp | Olivier |
+| Balai 360 degrés | Chapitre 3 | Illustrator (vectoriel) | .webp | Olivier |
+| Filtre | Chapitre 4 | Illustrator (vectoriel) | .webp | Olivier |
+| Tube | Chapitre 5 | Illustrator (vectoriel) | .webp | Olivier |
+| Filtreur de piscine | Chapitre 5 | Illustrator (vectoriel) | .webp | Olivier |
 
 ## 8. Les choix technologiques (NE PAS REMPLIR TOUT DE SUITE)
 
@@ -90,18 +95,19 @@ Médias animables choisis :
 
 - **GSAP + ScrollTrigger** : [...]
 - **Vue.js (CDN)** : Sert à sauter au chapitre correspondant. 
-- **Hébergement** : [...]
-- **Autres** (Anime.js, Chart.js, etc., s'il y a lieu) : [...]
+- **Hébergement** : Github Pages : vu que Pages est gratuit, nous pouvons héberger le site dessus sans soucis.
+- **Autres** (Anime.js, Chart.js, etc., s'il y a lieu) : Anime.js : Utilisé pour simplifier les animations. Plus grande facilité pour faire des animations lisses. 
 
 ## 9. Le calendrier de l'équipe (jusqu'au prototype du 13 nov.)
 
 | Semaine | [Prénom] | [Prénom] |
 |---|---|---|
 | 23 oct. | | |
-| 28 oct. | | |
-| 4 nov. | | |
-| 11 nov. | | |
+| 28 oct. | Olivier | |
+| 4 nov. | Olivier | |
+| 11 nov. | Olivier | |
 
 ## 10. Les risques et le plan B
 
-[2 ou 3 risques, et ce que vous couperez ou simplifierez si le temps manque. Ex. « Si la spritesheet prend trop de temps, on réduit à 8 images. »]
+1. Animations manquantes ou pas assez polies : Si les animations ne sont pas assez lisses, on peut utiliser ce risque pour transformer l'animation en pseudo-"PowerPoint". Le but de l'animation est d'être pris au sérieux, donc changer la nature des animations nous enlèverait une charge de travail.
+2. Chapitre 6 - questions philosophiques : Si nous ne trouvons pas de bon sujet philosophique par rapport à nos animations, nous pouvons couper cette section pour focuser principalement sur la portion réelle.
