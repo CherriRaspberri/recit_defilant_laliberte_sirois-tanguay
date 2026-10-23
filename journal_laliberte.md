@@ -37,7 +37,7 @@ Déconstruction sur comment un nettoyeur de piscines automatique fonctionne.
 ## PRÉPRODUCTION : 
 
 ### Qu'est-ce que j'ai accompli depuis le dernier bloc?
-J'ai fait ma section d'animations dans le storyboard et j'ai écrit la majorité du cahier de charges (section 1 - 2 - 3 partiellement, avec mes parties - 4 - 5 - 6 - 7 - 8 - 9 - 10)
+J'ai fait ma section d'animations dans le storyboard et j'ai écrit la majorité du cahier de charges (section 1 - 2 - 3 partiellement, avec mes parties - 4 - 5 - 6 - 7 - 8 - 9 partiellement, avec mes parties - 10)
 
 ### Quelle a été ma principale difficulté et comment je l'ai surmontée?
 Trouver des idées d'animations simples à réaliser. Je vois une idée, mais elle peut être trop ambicieuse pour la réaliser concrètement.
