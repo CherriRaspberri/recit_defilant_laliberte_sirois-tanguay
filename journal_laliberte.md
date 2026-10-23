@@ -34,3 +34,19 @@ Déconstruction sur comment un nettoyeur de piscines automatique fonctionne.
 - Objet composé de plusieurs micro-éléments qui chacun ont des micros-animations.
 - [Montage de pièces](https://www.awwwards.com/inspiration/scroll-hhhusher)
 ---
+## PRÉPRODUCTION : 
+
+### Qu'est-ce que j'ai accompli depuis le dernier bloc?
+J'ai fait ma section d'animations dans le storyboard et j'ai écrit la majorité du cahier de charges (section 1 - 2 - 3 partiellement, avec mes parties - 4 - 5 - 6 - 7 - 8 - 9 - 10)
+
+### Quelle a été ma principale difficulté et comment je l'ai surmontée?
+Trouver des idées d'animations simples à réaliser. Je vois une idée, mais elle peut être trop ambicieuse pour la réaliser concrètement.
+
+### Qu'est-ce que j'ai appris que je ne savais pas avant?
+Les dataviz : le fait que l'on peut aller fetch de l'information d'un site et l'appliquer à notre code.
+
+### Quelle est ma prochaine étape concrète?
+Créer les assets dans illustrator pour pouvoir commencer à animer. Une fois terminé, faire la structure de base du site et animer.
+
+### Si j'ai utilisé l'IA comme source pour un média : qu'est-ce que j'ai préparé moi-même, et qu'est-ce que ça m'a appris?
+Aucune IA n'a été utilisée de mon côté.
