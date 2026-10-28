@@ -91,9 +91,10 @@ L'API sera choisie au cours du mer. 11 nov. Pour l'instant, décrivez l'idée.
 | Manche télescopique| Chapitre 1 | Illustrator (vectoriel) | .webp | Cédric |
 | Personnage qui nettoie | Chapitre 1 | Illustrator (vectoriel) | .webp | Cédric |
 | Personnage nettoyeur | Chapitre 6 | Illustrator (vectoriel) | .webp | Cédric |
+| Diagramme | Chapitre 6 | Illustrator (vectoriel) | .webp | Cédric |
 | Personnage manche télescopique | Chapitre 7 | Illustrator (vectoriel) | .webp | Cédric |
 | Réunion de personnages nettoyeur | Chapitre 7 | Illustrator (vectoriel) | .webp | Cédric |
-| Diagramme | Chapitre 6 | Illustrator (vectoriel) | .webp | Cédric |
+
 
 
 ## 8. Les choix technologiques (NE PAS REMPLIR TOUT DE SUITE)
