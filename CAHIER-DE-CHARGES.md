@@ -87,7 +87,14 @@ L'API sera choisie au cours du mer. 11 nov. Pour l'instant, décrivez l'idée.
 | Balai 360 degrés | Chapitre 3 | Illustrator (vectoriel) | .webp | Olivier |
 | Filtre | Chapitre 4 | Illustrator (vectoriel) | .webp | Olivier |
 | Tube | Chapitre 5 | Illustrator (vectoriel) | .webp | Olivier |
-| Filtreur de piscine | Chapitre 5 | Illustrator (vectoriel) | .webp | Olivier |
+| Personnage qui ferme manche télescopique | Chapitre 1 | Illustrator (vectoriel) | .webp | Cédric |
+| Manche télescopique| Chapitre 1 | Illustrator (vectoriel) | .webp | Cédric |
+| Personnage qui nettoie | Chapitre 1 | Illustrator (vectoriel) | .webp | Cédric |
+| Personnage nettoyeur | Chapitre 6 | Illustrator (vectoriel) | .webp | Cédric |
+| Personnage manche télescopique | Chapitre 7 | Illustrator (vectoriel) | .webp | Cédric |
+| Réunion de personnages nettoyeur | Chapitre 7 | Illustrator (vectoriel) | .webp | Cédric |
+| Diagramme | Chapitre 6 | Illustrator (vectoriel) | .webp | Cédric |
+
 
 ## 8. Les choix technologiques (NE PAS REMPLIR TOUT DE SUITE)
 
