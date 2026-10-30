@@ -40,9 +40,9 @@ Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, Inte
 | Chapitres 2 - 3 - 4 - 5 | Olivier | Contenu, intégration, animations |
 | Média animable (nettoyeur + pièces) : Image en calques | Olivier | Préparation et intégration |
 | Média animable (Piscine) : Image en calques | Olivier | Préparation et intégration |
-| Composant Vue : navigateur de chapitres | Cédric | Défilement affect comment la page |
-| *Fetch* externe et dataviz | Olivier | Chercher le contenu exterieur  |
-| Chargement des chapitres (JSON) | Cédric | Animation entre les chapitres|
+| Composant Vue : navigateur de chapitres | Cédric | |
+| *Fetch* externe et dataviz | Olivier | |
+| Chargement des chapitres (JSON) | Cédric | |
 | Structure commune (HTML, CSS de base, mise en page) | Ensemble | |
 
 ## 5. Le modèle de données
