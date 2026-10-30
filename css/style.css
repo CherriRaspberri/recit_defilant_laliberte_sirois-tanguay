@@ -1,0 +1,9 @@
+/* Imports all CSS files to index.html */
+@import url("commun.css");
+@import url("chapitres/ch-01.css");
+@import url("chapitres/ch-02.css");
+@import url("chapitres/ch-03.css");
+@import url("chapitres/ch-04.css");
+@import url("chapitres/ch-05.css");
+@import url("chapitres/ch-06.css");
+@import url("chapitres/ch-07.css");
