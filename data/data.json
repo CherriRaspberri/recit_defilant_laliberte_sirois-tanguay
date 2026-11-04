@@ -1,0 +1,119 @@
+[
+    {
+        "id": "ch01",
+        "titre": "Chapitre 01 : ",
+        "textes": [
+            "...",
+            "...",
+            "..."
+        ],
+        "medias": [
+            {
+                "type": "image",
+                "src": "assets/images/nettoyeur-automatique.webp",
+                "alt": "..."
+            }
+        ]
+    },
+    {
+        "id": "ch02",
+        "titre": "Chapitre 02 : l'évolution au fil du temps du nettoyeur",
+        "textes": [
+            "...",
+            "...",
+            "..."
+        ],
+        "medias": [
+            {
+                "type": "image-01",
+                "src": "assets/images/nettoyeur-automatique.webp",
+                "alt": "..."
+            },
+            {
+                "type": "image-02",
+                "src": "assets/images/nettoyeur-automatique.webp",
+                "alt": "..."
+            }
+        ]
+    },
+    {
+        "id": "ch03",
+        "titre": "Chapitre 03 : les composantes d'un nettoyeur - Partie 01",
+        "textes": [
+            "...",
+            "...",
+            "..."
+        ],
+        "medias": [
+            {
+                "type": "image",
+                "src": "assets/images/nettoyeur-automatique.webp",
+                "alt": "..."
+            }
+        ]
+    },
+    {
+        "id": "ch04",
+        "titre": "Chapitre 04 : les composantes d'un nettoyeur - Partie 02",
+        "textes": [
+            "...",
+            "...",
+            "..."
+        ],
+        "medias": [
+            {
+                "type": "image",
+                "src": "assets/images/nettoyeur-automatique.webp",
+                "alt": "..."
+            }
+        ]
+    },
+    {
+        "id": "ch05",
+        "titre": "Chapitre 05 : les composantes d'un nettoyeur - Partie 03",
+        "textes": [
+            "...",
+            "...",
+            "..."
+        ],
+        "medias": [
+            {
+                "type": "image",
+                "src": "assets/images/nettoyeur-automatique.webp",
+                "alt": "..."
+            }
+        ]
+    },
+    {
+        "id": "ch06",
+        "titre": "Chapitre 06 : ",
+        "textes": [
+            "...",
+            "...",
+            "..."
+        ],
+        "medias": [
+            {
+                "type": "image",
+                "src": "assets/images/nettoyeur-automatique.webp",
+                "alt": "..."
+            }
+        ]
+    },
+    {
+        "id": "ch07",
+        "titre": "Chapitre 07 : ",
+        "textes": [
+            "...",
+            "...",
+            "..."
+        ],
+        "medias": [
+            {
+                "type": "image",
+                "src": "assets/images/nettoyeur-automatique.webp",
+                "alt": "..."
+            }
+        ]
+    }
+]
