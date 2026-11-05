@@ -1,4 +1,4 @@
-/* Imports all CSS files to index.html */
+/* Local CSS files import */
 @import url("commun.css");
 @import url("chapitres/ch-01.css");
 @import url("chapitres/ch-02.css");
