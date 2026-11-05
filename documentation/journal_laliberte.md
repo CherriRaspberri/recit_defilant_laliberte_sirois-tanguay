@@ -50,3 +50,27 @@ Créer les assets dans illustrator pour pouvoir commencer à animer. Une fois te
 
 ### Si j'ai utilisé l'IA comme source pour un média : qu'est-ce que j'ai préparé moi-même, et qu'est-ce que ça m'a appris?
 Aucune IA n'a été utilisée de mon côté.
+
+---
+
+## PRODUCTION (partie 01) :
+
+### Qu'est-ce que j'ai accompli depuis le dernier bloc? 
+- J'ai préparé l'arborescence du projet. 
+- J'ai trouvé mes assets pour le projet (Temporaire? Changements très possibles)
+- J'ai préparé le code de base du projet (index.html + main.js + style.css)
+- J'ai préparé le data.json pour accueillir nos textes et images.
+- J'ai link et testé JSAP.
+- J'ai fait des tests de pull request avec GitHub. 
+
+### Quelle a été ma principale difficulté et comment je l'ai surmontée?
+Tester le JSAP a été le plus difficile, puisque je n'avais jamais utilisé JSAP dans un projet auparavant.
+
+### Qu'est-ce que j'ai appris que je ne savais pas avant?
+Toute la librairie JSAP m'est nouvelle. 
+
+### Quelle est ma prochaine étape concrète?
+Commencer les animations + mise en marche de mes chapitres (animations).
+
+### Si j'ai utilisé l'IA comme source pour un média : qu'est-ce que j'ai préparé moi-même, et qu'est-ce que ça m'a appris?
+Aucune IA n'a été utilisée de mon côté.
