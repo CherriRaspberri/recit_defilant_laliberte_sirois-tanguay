@@ -7,3 +7,9 @@ mm.add("(prefers-reduced-motion: no-preference)", () => {
         duration : -1
     });
 });
+
+gsap.to(".box2", {
+  y: "50vw",
+  duration: 2,
+  ease: "linear"
+});
