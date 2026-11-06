@@ -108,7 +108,7 @@ L'API sera choisie au cours du mer. 11 nov. Pour l'instant, décrivez l'idée.
 
 ## 9. Le calendrier de l'équipe (jusqu'au prototype du 13 nov.)
 
-| Semaine | [Prénom] | [Prénom] | 
+| Semaine | Olivier | Cédric | 
 |---|---|---|
 | 23 oct. | | |
 | 28 oct. | Olivier fini la structure du site | Cédric fini les calques | 
@@ -119,3 +119,11 @@ L'API sera choisie au cours du mer. 11 nov. Pour l'instant, décrivez l'idée.
 
 1. Animations manquantes ou pas assez polies : Si les animations ne sont pas assez lisses, on peut utiliser ce risque pour transformer l'animation en pseudo-"PowerPoint". Le but de l'animation est d'être pris au sérieux, donc changer la nature des animations nous enlèverait une charge de travail.
 2. Chapitre 6 - questions philosophiques : Si nous ne trouvons pas de bon sujet philosophique par rapport à nos animations, nous pouvons couper cette section pour focuser principalement sur la portion réelle.
+
+## 11. Extensions JSAP 
+
+| Extension + chapitres | Nom | Application dans le récit |
+|---|---|---|
+| Extension GSAP : SplitText, chapitres 2 - 3 - 4 - 5 | Olivier | Effet de glissade sur le texte |
+| Extension GSAP : ScrambleText, chapitres 3 - 4 - 5 | Olivier | Effet de scramble sur le texte lors de la découverte des chapitres |
+| Extension GSAP : MotionPath, chapitres 3 - 4 - 5 | Olivier | Effet de déplacement à des points précis avec les composantes du nettoyeur  |
