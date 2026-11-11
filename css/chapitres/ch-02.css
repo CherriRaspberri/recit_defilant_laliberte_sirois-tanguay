@@ -1,5 +1,7 @@
-.box2 {
-    background: purple;
-    width: 100px;
-    height: 100px;
+#ch02 {
+    background-color: var(--color-secondary);
+}
+
+#ch02-textbox {
+    display: flex;
 }

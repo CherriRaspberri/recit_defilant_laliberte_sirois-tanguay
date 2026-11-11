@@ -1,15 +1,21 @@
-// Accessibility check; will stop if user has reduced motion activated
+// Olivier Laliberte 2026
 const mm = gsap.matchMedia();
+// Only plays animations if there is no reduced motion preferences
 mm.add("(prefers-reduced-motion: no-preference)", () => {
-    gsap.to(".test", {
-        x: 200,
-        yoyo : true,
-        duration : -1
-    });
-});
+    // Test animation
+    gsap.fromTo(
+        ".box",
+        {
+            backgroundColor: "#FF0000",
+        },
+        {
+            backgroundColor: "#0000FF",
+            yoyo: true,
+            duration: 1,
+            repeat: -1,
+            ease: "linear",
+        },
+    );
 
-gsap.to(".box2", {
-  y: "50vw",
-  duration: 2,
-  ease: "linear"
+    // Animate here...
 });

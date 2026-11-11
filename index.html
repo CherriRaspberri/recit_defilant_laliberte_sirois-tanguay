@@ -8,35 +8,168 @@
 
     <!-- Local CSS imports : style.css will import every other CSS file -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main id="recit">
-        <section id="ch01">
-            <div class="box"></div>
-        </section>
-
-        <section id="ch02">
-            <div class="box2"></div>
-        </section>
-
-        <section id="ch03">
+        <section class="chapter" id="ch01">
 
         </section>
 
-        <section id="ch04">
+        <!-- 
+        Chapter 02 :
+        Pool cleaning animation. The cleaner moves from left to right, 
+        leaving a trail of cleaned water behind it. In the trail, images of 
+        the evolution of the cleaner are displayed, showing how it has changed 
+        over time.
+        
+        Animations :
+        *with scroll*
+        - The cleaner moves from left to right across the pool.
+        - The trail of cleaned water is revealed as the cleaner moves.
+        - Images of the cleaner's evolution fade in and out along the trail, showing how it has changed over time.
+        - The text box displays information about the cleaner's evolution, with each image corresponding to a specific point in time.
+        - The textbox fades in and out to display different texts.
+
+        *idle*
+        - Water movement animation in the pool.
+        -->
+        <section class="chapter" id="ch02">
+            <div id="ch02-text-container">
+                <div class="title shrikhand-regular" id="ch02-title">
+                    <h2>Chapitre 02 : L'évolution du nettoyeur</h2>
+                </div>
+                <div class="text-box contrail-one-regular" id="ch02-textbox">
+                    <p>
+                        Les débuts hydrauliques (1970-1980) : Branchés sur la filtration, ils se déplaçaient de façon
+                        aléatoire grâce à la force de la pompe pour automatiser le nettoyage de base.
+                    </p>
+
+                    <p>
+                        L'ère électrique (1990-2000) : Dotés de moteurs autonomes et de filtres intégrés, ils
+                        s'affranchissent du système de la maison et gagnent en efficacité.
+                    </p>
+
+                    <p>
+                        L'intelligence moderne (Aujourd'hui) : Équipés de gyroscopes, de puces de cartographie et de
+                        commandes par application mobile pour un nettoyage intelligent et sur mesure.
+                    </p>
+                </div>
+            </div>
+
+            <div id="pool-container">
+                <div id="cleaner">
+                    <img src="..." alt="Cleaner" id="cleaner-img">
+                </div>
+                <div id="clean-trail">
+                    <div id="img-container">
+                        <img src="..." alt="img_evolution_01" id="img-evolution-01">
+                        <img src="..." alt="img_evolution_02" id="img-evolution-02">
+                        <img src="..." alt="img_evolution_03" id="img-evolution-03">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        Chapter 03 : 
+        Cleaner animation. The cleaner moves on the screen to let space for a piece coming out of it. 
+
+        Animations :
+        - The cleaner moves to the left to make space for the brush to come out of it.
+        - The brush comes out of the cleaner and rotates to show its shape and details.
+        -->
+        <section class="chapter" id="ch03">
+            <div class="title shrikhand-regular" id="ch03-title">
+                <h2>Chapitre 03 : Les composantes du nettoyeur - le balai</h2>
+            </div>
+            <div class="text-box contrail-one-regular" id="ch03-textbox">
+                <p>Le rôle du balai est de décoller mécaniquement les saletés incrustées, les algues et le biofilm
+                    collés sur les parois et le fond du bassin. En tournant à l'aide de turbines internes ou de moteurs
+                    électriques, elle agit comme un balai actif qui libère les impuretés pour qu'elles puissent être
+                    immédiatement capturées par le flux d'aspiration.
+                </p>
+
+                <p>Généralement fabriquée par injection plastique, la brosse ronde est constituée d'un moyeu central en
+                    polypropylène robuste sur lequel sont surmoulées des lamelles ou des poils souples en caoutchouc
+                    synthétique (comme le PVC ou le nitrile). Les ingénieurs conçoivent ces picots selon des angles
+                    hélicoïdaux précis pour optimiser l'adhérence au revêtement de la piscine et canaliser les débris
+                    vers l'orifice d'aspiration central du robot.
+                </p>
+            </div>
+
+            <div class="cleaner"></div>
+            <div class="object" id="ch03-object"></div>
+            <div class="treadmill"></div>
+        </section>
+
+        <!--
+        Chapter 04 : 
+        -->
+        <section class="chapter" id="ch04">
+            <div class="title shrikhand-regular" id="ch04-title">
+                <h2>Chapitre 04 : Les composantes du nettoyeur - le filtre</h2>
+            </div>
+            <div class="text-box contrail-one-regular" id="ch04-textbox">
+                <p>Le filtre agit comme le poumon du système de nettoyage. L'eau aspirée traverse les micropores du
+                    filtre (souvent de l'ordre de 20 à 100 microns), ce qui permet de retenir efficacement le sable, les
+                    poussières, les feuilles broyées et les fines particules en suspension, rejetant ainsi une eau
+                    claire et purifiée dans le bassin.
+                </p>
+
+                <p>
+                    Le boîtier ou la cartouche filtrante est conçu à partir de polymères thermoplastiques renforcés pour
+                    résister à la pression constante et aux traitements chimiques de l'eau (chlore, brome). L'élément
+                    filtrant proprement dit utilise des membranes plissées en polyester ou en polypropylène non tissé.
+                    Ces plis sont espacés millimétriquement pour maximiser la surface de filtration sans restreindre le
+                    débit d'eau.
+                </p>
+            </div>
+
+            <div class="cleaner"></div>
+            <div class="object" id="ch04-object"></div>
+            <div class="treadmill"></div>
+        </section>
+
+        <!--
+        Chapter 05 : 
+        -->
+        <section class="chapter" id="ch05">
+            <div class="title shrikhand-regular" id="ch05-title">
+                <h2>Chapitre 05 : Les composantes du nettoyeur - le tube</h2>
+            </div>
+            <div class="text-box contrail-one-regular" id="ch05-textbox">
+                <p>
+                    Le tube connecté au filtre sert de conduit de transport étanche. Pour les nettoyeurs hydrauliques
+                    reliés à la filtration de la piscine, il achemine la saleté et l'eau pompée directement vers le
+                    système de filtration principal. Sur certains modèles, il guide également le mouvement du robot en
+                    lui permettant de se déplacer librement dans toutes les zones du bassin sans entrave.
+                </p>
+
+                <p>
+                    Extrudé à partir de polyéthylène ou d'éthylène-acétate de vinyle (EVA), le tuyau flexible est conçu
+                    avec une structure annelée. Cette alternance de sections rigides et de zones souples lui confère à
+                    la fois une haute résistance à l'écrasement, une grande flexibilité pour éviter les nœuds, et une
+                    flottabilité neutre ou une résistance accrue aux UV selon qu'il s'agit d'un robot hydraulique ou
+                    électrique.
+                </p>
+            </div>
+
+            <div class="cleaner"></div>
+            <div class="object" id="ch05-object"></div>
+            <div class="tube"></div>
+        </section>
+
+        <section class="chapter" id="ch06">
 
         </section>
 
-        <section id="ch05">
-
-        </section>
-
-        <section id="ch06">
-
-        </section>
-
-        <section id="ch07">
+        <section class="chapter" id="ch07">
 
         </section>
     </main>
@@ -44,6 +177,9 @@
     <!-- GSAP + ScrollTrigger imports : animations -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- Vue.js import : chapter selection handler -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13/dist/vue.global.prod.js">
+    </script>
     <!-- Local JavaScript imports : main.js will import every other JavaScript file -->
     <script type="module" src="js/main.js"></script>
 </body>

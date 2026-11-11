@@ -1,0 +1,21 @@
+.box {
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+
+.chapter {
+    width: 100vw;
+    height: 100vh;
+
+    overflow-x: hidden;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.text-box {
+    font-size: 1.5rem;
+    max-width: 800px;
+}
