@@ -1,3 +1,7 @@
 #ch02 {
     background-color: var(--color-secondary);
 }
+
+#ch02-textbox {
+    display: flex;
+}

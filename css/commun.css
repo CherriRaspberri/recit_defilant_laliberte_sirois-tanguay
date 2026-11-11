@@ -5,11 +5,17 @@
 }
 
 .chapter {
-    /* BORDERS TEMPORAIRES - À RETIRER PLUS TARD */
-    border-bottom: 2px solid black;
-
     width: 100vw;
     height: 100vh;
 
     overflow-x: hidden;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.text-box {
+    font-size: 1.5rem;
+    max-width: 800px;
 }
