@@ -10,6 +10,7 @@ import "./chapitres/ch-05.js";
 import "./chapitres/ch-06.js";
 import "./chapitres/ch-07.js";
 
+/*
 // js/main.js, phase 1
 import { createNavigation } from "./navigation.js";
 
@@ -22,3 +23,4 @@ const chapters = Array.from(sections).map((section) => ({
 }));
 
 createNavigation(chapters);
+*/

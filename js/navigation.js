@@ -1,6 +1,6 @@
 // js/navigation.js : le composant Vue (Options API)
 // Barre de progression + navigateur de chapitres
-
+/*
 export function createNavigation(chapters) {
   Vue.createApp({
     // 1. Les données : ce qui peut changer
@@ -49,3 +49,4 @@ export function createNavigation(chapters) {
     },
   }).mount("#navigation");
 }
+*/
