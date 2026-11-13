@@ -63,15 +63,23 @@
             </div>
 
             <div id="pool-container">
+                <!--Pool ripples-->
+                <div id="water-layer">
+                    <div class="wave wave-front"></div>
+                    <div class="reflections"></div>
+                </div>
+
                 <div id="cleaner">
-                    <img src="..." alt="Cleaner" id="cleaner-img">
+                    <img src="./assets/images/temp/OL_nettoyeur_vue_dessus.png" alt="Cleaner" id="cleaner-img">
                 </div>
                 <div id="clean-trail">
+                    <!--
                     <div id="img-container">
                         <img src="..." alt="img_evolution_01" id="img-evolution-01">
                         <img src="..." alt="img_evolution_02" id="img-evolution-02">
                         <img src="..." alt="img_evolution_03" id="img-evolution-03">
                     </div>
+                    -->
                 </div>
             </div>
         </section>
@@ -85,84 +93,123 @@
         - The brush comes out of the cleaner and rotates to show its shape and details.
         -->
         <section class="chapter" id="ch03">
-            <div class="title shrikhand-regular" id="ch03-title">
-                <h2>Chapitre 03 : Les composantes du nettoyeur - le balai</h2>
-            </div>
-            <div class="text-box contrail-one-regular" id="ch03-textbox">
-                <p>Le rôle du balai est de décoller mécaniquement les saletés incrustées, les algues et le biofilm
-                    collés sur les parois et le fond du bassin. En tournant à l'aide de turbines internes ou de moteurs
-                    électriques, elle agit comme un balai actif qui libère les impuretés pour qu'elles puissent être
-                    immédiatement capturées par le flux d'aspiration.
-                </p>
+            <div id="ch03-text-container">
+                <div class="title shrikhand-regular" id="ch03-title">
+                    <h2>Chapitre 03 : <br> Les composantes du nettoyeur - le balai</h2>
+                </div>
+                <div class="text-box contrail-one-regular" id="ch03-textbox">
+                    <p>Le rôle du balai est de décoller mécaniquement les saletés incrustées, les algues et le biofilm
+                        collés sur les parois et le fond du bassin. En tournant à l'aide de turbines internes ou de
+                        moteurs
+                        électriques, elle agit comme un balai actif qui libère les impuretés pour qu'elles puissent être
+                        immédiatement capturées par le flux d'aspiration.
+                    </p>
 
-                <p>Généralement fabriquée par injection plastique, la brosse ronde est constituée d'un moyeu central en
-                    polypropylène robuste sur lequel sont surmoulées des lamelles ou des poils souples en caoutchouc
-                    synthétique (comme le PVC ou le nitrile). Les ingénieurs conçoivent ces picots selon des angles
-                    hélicoïdaux précis pour optimiser l'adhérence au revêtement de la piscine et canaliser les débris
-                    vers l'orifice d'aspiration central du robot.
-                </p>
+                    <p>Généralement fabriquée par injection plastique, la brosse ronde est constituée d'un moyeu central
+                        en
+                        polypropylène robuste sur lequel sont surmoulées des lamelles ou des poils souples en caoutchouc
+                        synthétique (comme le PVC ou le nitrile). Les ingénieurs conçoivent ces picots selon des angles
+                        hélicoïdaux précis pour optimiser l'adhérence au revêtement de la piscine et canaliser les
+                        débris
+                        vers l'orifice d'aspiration central du robot.
+                    </p>
+                </div>
             </div>
 
-            <div class="cleaner"></div>
-            <div class="object" id="ch03-object"></div>
-            <div class="treadmill"></div>
+            <div class="img-container" id="ch03-img-container">
+                <div class="cleaner">
+                    <img src="./assets/images/temp/OL_nettoyeur_vue_trois_quart.png" alt="Cleaner"
+                        id="ch03-cleaner-img">
+                </div>
+                <div class="object" id="ch03-object">
+                    <img src="./assets/images/temp/OL_piece_01.png" alt="Broom" id="ch03-object-img">
+                </div>
+                <div class="treadmill"></div>
+            </div>
         </section>
 
         <!--
         Chapter 04 : 
         -->
         <section class="chapter" id="ch04">
-            <div class="title shrikhand-regular" id="ch04-title">
-                <h2>Chapitre 04 : Les composantes du nettoyeur - le filtre</h2>
-            </div>
-            <div class="text-box contrail-one-regular" id="ch04-textbox">
-                <p>Le filtre agit comme le poumon du système de nettoyage. L'eau aspirée traverse les micropores du
-                    filtre (souvent de l'ordre de 20 à 100 microns), ce qui permet de retenir efficacement le sable, les
-                    poussières, les feuilles broyées et les fines particules en suspension, rejetant ainsi une eau
-                    claire et purifiée dans le bassin.
-                </p>
+            <div id="ch04-text-container">
+                <div class="title shrikhand-regular" id="ch04-title">
+                    <h2>Chapitre 04 : <br> Les composantes du nettoyeur - le filtre</h2>
+                </div>
+                <div class="text-box contrail-one-regular" id="ch04-textbox">
+                    <p>Le filtre agit comme le poumon du système de nettoyage. L'eau aspirée traverse les micropores du
+                        filtre (souvent de l'ordre de 20 à 100 microns), ce qui permet de retenir efficacement le sable,
+                        les
+                        poussières, les feuilles broyées et les fines particules en suspension, rejetant ainsi une eau
+                        claire et purifiée dans le bassin.
+                    </p>
 
-                <p>
-                    Le boîtier ou la cartouche filtrante est conçu à partir de polymères thermoplastiques renforcés pour
-                    résister à la pression constante et aux traitements chimiques de l'eau (chlore, brome). L'élément
-                    filtrant proprement dit utilise des membranes plissées en polyester ou en polypropylène non tissé.
-                    Ces plis sont espacés millimétriquement pour maximiser la surface de filtration sans restreindre le
-                    débit d'eau.
-                </p>
+                    <p>
+                        Le boîtier ou la cartouche filtrante est conçu à partir de polymères thermoplastiques renforcés
+                        pour
+                        résister à la pression constante et aux traitements chimiques de l'eau (chlore, brome).
+                        L'élément
+                        filtrant proprement dit utilise des membranes plissées en polyester ou en polypropylène non
+                        tissé.
+                        Ces plis sont espacés millimétriquement pour maximiser la surface de filtration sans restreindre
+                        le
+                        débit d'eau.
+                    </p>
+                </div>
             </div>
 
-            <div class="cleaner"></div>
-            <div class="object" id="ch04-object"></div>
-            <div class="treadmill"></div>
+            <div class="img-container">
+                <div class="cleaner">
+                    <img src="./assets/images/temp/OL_nettoyeur_vue_trois_quart.png" alt="Cleaner"
+                        id="ch04-cleaner-img">
+                </div>
+                <div class="object" id="ch04-object">
+                    <img src="./assets/images/temp/OL_piece_02.webp" alt="Broom" id="ch04-object-img">
+                </div>
+                <div class="treadmill"></div>
+            </div>
         </section>
 
         <!--
         Chapter 05 : 
         -->
         <section class="chapter" id="ch05">
-            <div class="title shrikhand-regular" id="ch05-title">
-                <h2>Chapitre 05 : Les composantes du nettoyeur - le tube</h2>
-            </div>
-            <div class="text-box contrail-one-regular" id="ch05-textbox">
-                <p>
-                    Le tube connecté au filtre sert de conduit de transport étanche. Pour les nettoyeurs hydrauliques
-                    reliés à la filtration de la piscine, il achemine la saleté et l'eau pompée directement vers le
-                    système de filtration principal. Sur certains modèles, il guide également le mouvement du robot en
-                    lui permettant de se déplacer librement dans toutes les zones du bassin sans entrave.
-                </p>
+            <div id="ch05-text-container">
+                <div class="title shrikhand-regular" id="ch05-title">
+                    <h2>Chapitre 05 : <br> Les composantes du nettoyeur - le tube</h2>
+                </div>
+                <div class="text-box contrail-one-regular" id="ch05-textbox">
+                    <p>
+                        Le tube connecté au filtre sert de conduit de transport étanche. Pour les nettoyeurs
+                        hydrauliques
+                        reliés à la filtration de la piscine, il achemine la saleté et l'eau pompée directement vers le
+                        système de filtration principal. Sur certains modèles, il guide également le mouvement du robot
+                        en
+                        lui permettant de se déplacer librement dans toutes les zones du bassin sans entrave.
+                    </p>
 
-                <p>
-                    Extrudé à partir de polyéthylène ou d'éthylène-acétate de vinyle (EVA), le tuyau flexible est conçu
-                    avec une structure annelée. Cette alternance de sections rigides et de zones souples lui confère à
-                    la fois une haute résistance à l'écrasement, une grande flexibilité pour éviter les nœuds, et une
-                    flottabilité neutre ou une résistance accrue aux UV selon qu'il s'agit d'un robot hydraulique ou
-                    électrique.
-                </p>
+                    <p>
+                        Extrudé à partir de polyéthylène ou d'éthylène-acétate de vinyle (EVA), le tuyau flexible est
+                        conçu
+                        avec une structure annelée. Cette alternance de sections rigides et de zones souples lui confère
+                        à
+                        la fois une haute résistance à l'écrasement, une grande flexibilité pour éviter les nœuds, et
+                        une
+                        flottabilité neutre ou une résistance accrue aux UV selon qu'il s'agit d'un robot hydraulique ou
+                        électrique.
+                    </p>
+                </div>
             </div>
 
-            <div class="cleaner"></div>
-            <div class="object" id="ch05-object"></div>
-            <div class="tube"></div>
+            <div class="img-container" id="ch05-img-container">
+                <div class="cleaner">
+                    <img src="./assets/images/temp/OL_nettoyeur_vue_trois_quart.png" alt="Cleaner"
+                        id="ch05-cleaner-img">
+                </div>
+                <div class="object" id="ch05-object">
+                </div>
+                <div class="tube"></div>
+            </div>
         </section>
 
         <section class="chapter" id="ch06">
