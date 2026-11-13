@@ -1,3 +1,13 @@
 #ch05 {
     background-color: var(--color-primary);
 }
+
+#ch05-text-container {
+    padding: 0 5%;
+}
+
+#ch05-cleaner-img {
+    max-width: 400px;
+    transform-origin: 50% 50%;
+    display: block;
+}

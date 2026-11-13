@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 h2 {
@@ -24,4 +24,9 @@ h2 {
     font-size: 1.5rem;
     max-width: 800px;
     color: var(--text-color-primary);
+}
+
+.img-container {
+    display: flex;
+    justify-content: flex-end;
 }

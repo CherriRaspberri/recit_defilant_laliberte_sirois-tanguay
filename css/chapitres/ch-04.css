@@ -1,3 +1,19 @@
 #ch04 {
     background-color: var(--color-primary);
 }
+
+#ch04-text-container {
+    padding: 0 5%;
+}
+
+#ch04-cleaner-img {
+    max-width: 400px;
+    transform-origin: 50% 50%;
+    display: block;
+}
+
+#ch04-object-img {
+    max-width: 400px;
+    transform-origin: 50% 50%;
+    display: block;
+}
