@@ -1,3 +1,9 @@
+/* Olivier Laliberte - 2026 */
+/*
+    Chapter : 
+    - Gradient to go from yellow to blue
+    - Displays elements in a column
+*/
 #ch02 {
     position: relative;
 
@@ -5,16 +11,28 @@
 
     display: flex;
     flex-direction: column;
-
-    view-timeline-name: --cleaner-movement;
-    view-timeline-axis: block;
 }
 
 /* #region text areas */
+
 #ch02-text-container {
     padding: 0 5%;
 }
 
+/* 
+    Title : 
+    - Starts invisible to appear later with animations
+    - Has a small transform to move later with animatons
+*/
+#ch02-title {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+/*
+    Text box :
+    - displays p evenly in a row
+*/
 #ch02-textbox {
     width: 100%;
     max-width: none;
@@ -23,15 +41,27 @@
     justify-content: space-around;
 }
 
+/*
+    p :
+    - Width maxed out to 300px
+    - Start invisible to appear later with animations
+*/
 #ch02-textbox p {
     max-width: 300px;
     text-align: justify;
+
+    opacity: 0;
 }
 
 /* #endregion */
 
 /* #region pool */
-/* base pool style : tiled background, with small gradient at the bottom for a smooth transition */
+
+/* 
+    Base pool style : 
+    - tiled background 
+    - small gradient at the bottom for a smooth transition 
+*/
 #pool-container {
     position: relative;
 
@@ -46,7 +76,11 @@
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
-/* Tiled realistic border on top of the pool : makes it look more real, with a small shadow underneath */
+/* 
+    Tiled realistic border on top of the pool : 
+    - splitted white and gray tiles
+    - makes it look more real with a small shadow underneath 
+*/
 #pool-container::before {
     content: '';
     position: absolute;
@@ -75,8 +109,10 @@
     z-index: 3;
 }
 
-/* wave container style */
-/* removed any possible interaction with the waves */
+/*
+    Wave container style :
+    - removed any possible interaction with the waves 
+*/
 #water-layer {
     position: absolute;
     inset: 0;
@@ -85,13 +121,17 @@
     z-index: 2;
 }
 
-/* Base wave layer style */
+/* 
+    Base wave layer style :
+    - fixed at 92% of the height of the pool
+    - repeats its pattern
+*/
 .wave {
     position: absolute;
 
     left: 0;
     bottom: 0;
-    /* Made it 200% for seamless animation, then 92% width to leave space up top */
+    /* Made it 200% for seamless animation */
     width: 200%;
     height: 92%;
 
@@ -100,15 +140,22 @@
     background-size: 50% 100%;
 }
 
-/* Used svgs on back and front waves to make it so it scales on every screen */
-/* Back wave : slower, darker. Creates depth effect with wave-front */
-/* Front wave : faster, lighter. Gives motion to the pool */
+/*
+    Wave front : 
+    - Target of idle animation
+    - used svg to make it so it scales on every screen
+    - infinite animation so it won't break off if the user stays until the end of the animation
+*/
 .wave-front {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600' preserveAspectRatio='none'%3E%3Cpath d='M0,35 C300,15 450,55 600,35 C750,15 900,55 1200,35 L1200,600 L0,600 Z' fill='rgba(0, 175, 205, 0.40)'/%3E%3Cpath d='M0,35 C300,15 450,55 600,35 C750,15 900,55 1200,35' fill='none' stroke='rgba(0, 50, 90, 0.3)' stroke-width='12'/%3E%3Cpath d='M0,35 C300,15 450,55 600,35 C750,15 900,55 1200,35' fill='none' stroke='rgba(170, 245, 245, 0.95)' stroke-width='6'/%3E%3C/svg%3E");
     animation: flow-front 7s linear infinite;
 }
 
-/* subtle reflections in the water */
+/* 
+    Reflections :
+    - subtle reflections in the water 
+    - creates reflections underneath the wave-front to make it seem like the pool is filled up with water
+*/
 .reflections {
     position: absolute;
     inset: 10% 0 0 0;
@@ -123,7 +170,7 @@
     mix-blend-mode: screen;
 }
 
-/* Flowing waves keyframe animations */
+/* Flowing wave keyframe animation */
 @keyframes flow-front {
     0% {
         transform: translateX(0) translateY(0);
@@ -140,9 +187,16 @@
 
 /* #endregion */
 
-/* TODO : fix cleaner movement animation to match with scroll */
-
 /* #region cleaner and clean trail */
+
+/*
+    Cleaner : 
+    - target of GSAP animation
+
+    Cleaner-img :
+    - turned 90degs to make it look like its sticking to the pool wall
+    - removed any possible interaction with it
+*/
 #cleaner {
     position: absolute;
     top: 50%;
@@ -152,10 +206,6 @@
     transform-origin: 50% 50%;
     
     pointer-events: none;
-    
-    animation: drive-across linear both;
-    animation-timeline: scroll();
-    animation-range: entry 10% exit 40%;
 }
 
 #cleaner-img {
@@ -163,22 +213,6 @@
     transform-origin: 50% 50%;
     transform: rotate(90deg);
     display: block;
-}
-
-@keyframes drive-across {
-    0% {
-        left: -20%;
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    /* gentle tilt mid-path */
-    30% {
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(5deg); 
-    }
-    80% {
-        left: 120%;
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
 }
 
 /* #endregion */
