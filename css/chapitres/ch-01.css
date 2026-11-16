@@ -1,0 +1,33 @@
+#ch01 {
+  background-color: #483B37;
+  position: relative;
+  width: 100%;        /* Utilise 100% au lieu de 100vw pour éviter le conflit avec la barre de défilement */
+  min-height: 100vh;  
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#tv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;        /* Passe à 95vw pour qu'elle prenne presque toute la largeur de l'écran */
+  max-width: none;    /* Retire la limite max pour qu'elle puisse grandir sans restriction */
+  height: 90vh;       /* Force une hauteur en pourcentage de l'écran */
+  object-fit: contain;/* Garde les proportions de l'image sans la déformer */
+  z-index: 1;         
+}
+
+#piscine {
+  position: absolute;
+  top: 44%;          /* Remonte l'image pour combler l'espace vide en haut */
+  left: 49%;         /* Garde l'alignement horizontal centré dans le tube */
+  transform: translate(-50%, -50%);
+  width: 30vw;       /* Élargit légèrement pour toucher les bords gauche et droit */
+  height: 50vh;      /* Agrandit en hauteur pour remplir tout l'écran noir */
+  object-fit: cover; 
+  z-index: 0;        /* Reste bien derrière le cadre de la télévision */
+}
