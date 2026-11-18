@@ -9,32 +9,6 @@
   overflow: hidden;
 }
 
-/* Conteneur du texte en haut */
-#tout_texte_ch6 {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: auto;
-  z-index: 10;
-  overflow: hidden;
-}
-
-#tout_texte_ch6 p {
-  color: #FFFFFF !important;
-  font-size: 3.5rem !important;
-  line-height: 1.3;
-  margin: 0;
-  width: 100%;
-  white-space: normal;
-}
-
-#tout_texte_ch6 .p2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .bloc-blanc {
   position: absolute;
   top: 0;
@@ -49,12 +23,12 @@
 /* Zone centrale unique pour le diagramme, le "MAIS" et le conseil */
 .images_ch6 {
   position: absolute;
-  top: 63%;
+  top: 55%;             /* Légèrement plus bas pour laisser de l'air sous le gros texte */
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw;
-  max-width: 1400px;
-  height: 65vh;
+  width: 90vw;          
+  max-width: 1400px;    
+  height: 70vh;         
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,4 +51,66 @@
   color: #FFFFFF;
   margin: 0;
   pointer-events: none;
+}
+
+#ch06-text-container {
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+#ch06-title {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 1%;
+}
+
+/* Boîte du texte centrée au milieu */
+#ch06-text {
+  position: relative;
+  overflow: hidden;
+  width: 88% ;
+  max-width: 1300px ;
+  margin: 0 auto;
+  min-height: 170px;
+  z-index: 15;
+}
+
+/* Paragraphes blancs et centrés, calibrés pour tenir sur 3-4 lignes */
+#ch06-p1,
+#ch06-p2,
+#ch06-p3 {
+  color: #FFFFFF !important;
+  font-size: 1.9rem !important;
+  line-height: 1.3 !important;
+  text-align: center ;
+  width: 100% ;
+  max-width: 100% ;
+  margin: 0 ;
+}
+
+/* Force p2 et p3 à rester empilés exactement sur p1 */
+#ch06-p2,
+#ch06-p3 {
+  position: absolute ;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+
+/* Bloc blanc de balayage */
+.bloc-blanc-ch6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 20;
+  transform: translateX(-101%);
 }

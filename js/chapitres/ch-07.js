@@ -1,75 +1,78 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// État initial : tous les textes masqués, bloc blanc à gauche, images 2 et 3 cachées
-gsap.set("#tout_texte_ch7 .p1, #tout_texte_ch7 .p2, #tout_texte_ch7 .p3", {
-  clipPath: "inset(0 100% 0 0)"
-});
-gsap.set(".bloc-blanc-ch7", { x: "-101%" });
-gsap.set("#rencontre", { opacity: 1, scale: 1 });
-gsap.set("#solution, #point-dinterrogation", { opacity: 0, scale: 0.95 });
+// État initial : titre visible, paragraphes et images cachés en fondu
+gsap.set("#ch07-title", { opacity: 1, y: 0 });
+gsap.set("#ch07-p1, #ch07-p2, #ch07-p3", { opacity: 0, y: 20 });
+gsap.set("#rencontre, #solution, #point-dinterrogation", { opacity: 0, scale: 0.95 });
 
 const tlCh07 = gsap.timeline({
   scrollTrigger: {
     trigger: "#ch07",
     start: "top top",
-    end: "+=300%",        // Fige la section sur 3 hauteurs d'écran pour les 3 étapes
+    end: "+=350%",
     pin: true,
     scrub: 1
   }
 });
 
-// ÉTAPE 1 : Le bloc blanc révèle le paragraphe 1 (l'image #rencontre est déjà en place)
-tlCh07.to(".bloc-blanc-ch7", {
-    x: "0%",
-    duration: 1,
-    ease: "power2.inOut"
+// ÉTAPE 1 : Apparition en fondu de p1 + image #rencontre
+tlCh07.to("#ch07-p1", {
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    ease: "power2.out"
   })
-  .set("#tout_texte_ch7 .p1", { clipPath: "inset(0 0% 0 0)" })
-  .to(".bloc-blanc-ch7", {
-    x: "101%",
-    duration: 1,
-    ease: "power2.inOut"
-  })
+  .to("#rencontre", {
+    opacity: 1,
+    scale: 1,
+    duration: 0.6,
+    ease: "power2.out"
+  }, "<")
 
-  // Pause lecture étape 1
   .to({}, { duration: 1 })
 
-  // ÉTAPE 2 : Le bloc blanc remplace p1 par p2 et affiche l'image #solution
-  .set(".bloc-blanc-ch7", { x: "-101%" })
-  .to(".bloc-blanc-ch7", {
-    x: "0%",
-    duration: 1,
-    ease: "power2.inOut"
+  // ÉTAPE 2 : p1 et #rencontre s'effacent, p2 et #solution apparaissent
+  .to("#ch07-p1", {
+    opacity: 0,
+    y: -20,
+    duration: 0.6,
+    ease: "power2.in"
   })
-  .set("#tout_texte_ch7 .p1", { clipPath: "inset(0 100% 0 0)" })
-  .set("#tout_texte_ch7 .p2", { clipPath: "inset(0 0% 0 0)" })
-  .to("#rencontre", { opacity: 0, duration: 0.4 }, "<")
-  .to("#solution", { opacity: 1, scale: 1, duration: 0.4 }, "<")
-  .to(".bloc-blanc-ch7", {
-    x: "101%",
-    duration: 1,
-    ease: "power2.inOut"
+  .to("#rencontre", { opacity: 0, duration: 0.5 }, "<")
+  .to("#ch07-p2", {
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    ease: "power2.out"
   })
+  .to("#solution", {
+    opacity: 1,
+    scale: 1,
+    duration: 0.6,
+    ease: "power2.out"
+  }, "<")
 
-  // Pause lecture étape 2
   .to({}, { duration: 1 })
 
-  // ÉTAPE 3 : Le bloc blanc remplace p2 par p3 et affiche #point-dinterrogation
-  .set(".bloc-blanc-ch7", { x: "-101%" })
-  .to(".bloc-blanc-ch7", {
-    x: "0%",
-    duration: 1,
-    ease: "power2.inOut"
+  // ÉTAPE 3 : p2 et #solution s'effacent, p3 et #point-dinterrogation apparaissent
+  .to("#ch07-p2", {
+    opacity: 0,
+    y: -20,
+    duration: 0.6,
+    ease: "power2.in"
   })
-  .set("#tout_texte_ch7 .p2", { clipPath: "inset(0 100% 0 0)" })
-  .set("#tout_texte_ch7 .p3", { clipPath: "inset(0 0% 0 0)" })
-  .to("#solution", { opacity: 0, duration: 0.4 }, "<")
-  .to("#point-dinterrogation", { opacity: 1, scale: 1, duration: 0.4 }, "<")
-  .to(".bloc-blanc-ch7", {
-    x: "101%",
-    duration: 1,
-    ease: "power2.inOut"
+  .to("#solution", { opacity: 0, duration: 0.5 }, "<")
+  .to("#ch07-p3", {
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    ease: "power2.out"
   })
+  .to("#point-dinterrogation", {
+    opacity: 1,
+    scale: 1,
+    duration: 0.6,
+    ease: "power2.out"
+  }, "<")
 
-  // Pause finale avant de quitter le chapitre 07
   .to({}, { duration: 0.8 });
