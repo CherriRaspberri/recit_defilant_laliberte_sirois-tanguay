@@ -23,7 +23,7 @@
 
 #piscine {
   position: absolute;
-  top: 44%;          /* Remonte l'image pour combler l'espace vide en haut */
+  top: 42%;          /* Remonte l'image pour combler l'espace vide en haut */
   left: 48%;         /* Garde l'alignement horizontal centré dans le tube */
   transform: translate(-50%, -50%);
   width: 30vw;       /* Élargit légèrement pour toucher les bords gauche et droit */
@@ -34,7 +34,7 @@
 
 #homme {
   position: absolute;
-  top: 44%;          /* Remonte l'image pour combler l'espace vide en haut */
+  top: 42%;          /* Remonte l'image pour combler l'espace vide en haut */
   left: 48%;         /* Garde l'alignement horizontal centré dans le tube */
   transform: translate(-50%, -50%);
   width: 30vw;       /* Élargit légèrement pour toucher les bords gauche et droit */
@@ -45,7 +45,7 @@
 
 #nettoyeur {
   position: absolute;
-  top: 44%;
+  top: 40%;
   left: 48%;
   transform: translate(-50%, -50%);
   width: 30vw;          
@@ -55,21 +55,20 @@
 }
 
 
-
 #texte_ch1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90vw;       /* Ajuste la largeur pour qu'elle soit plus lisible */
-  max-width: 2000px;  /* Limite la largeur maximale pour les grands écrans */
+  width: 60vw;       /* Ajuste la largeur pour qu'elle soit plus lisible */
+  max-width: 1000px;  /* Limite la largeur maximale pour les grands écrans */
   color: #FFFFFF;    /* Texte en blanc pour contraster avec le fond sombre */
-  font-size: 2rem; /* Taille de police légèrement augmentée pour la lisibilité */
+  font-size: 0.5rem; /* Taille de police légèrement augmentée pour la lisibilité */
   line-height: 1.6;  /* Espacement des lignes pour une meilleure lecture */
   text-align: center;/* Centre le texte horizontalement */
   z-index: 2;       
 }
 
 #texte_ch1 p, .texte_ch1 p {
-  font-size: 3.5rem; 
+  font-size: 1.25rem; 
   line-height: 1;  /* Resserre un peu l'interligne pour les très gros textes */
 }

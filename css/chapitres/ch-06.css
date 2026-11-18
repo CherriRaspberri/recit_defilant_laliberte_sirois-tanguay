@@ -21,8 +21,8 @@
 }
 
 #tout_texte_ch6 p {
-  color: #FFFFFF !important;
-  font-size: 3.5rem !important;
+  color: #FFFFFF ;
+  font-size: 1.4rem ;
   line-height: 1.3;
   margin: 0;
   width: 100%;
@@ -49,12 +49,12 @@
 /* Zone centrale unique pour le diagramme, le "MAIS" et le conseil */
 .images_ch6 {
   position: absolute;
-  top: 63%;
+  top: 63%;             /* Légèrement plus bas pour laisser de l'air sous le gros texte */
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw;
-  max-width: 1400px;
-  height: 65vh;
+  width: 90vw;          
+  max-width: 1400px;    
+  height: 70vh;         
   display: flex;
   justify-content: center;
   align-items: center;
