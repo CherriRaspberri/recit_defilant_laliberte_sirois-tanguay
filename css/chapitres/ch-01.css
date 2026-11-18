@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;        /* Utilise 100% au lieu de 100vw pour éviter le conflit avec la barre de défilement */
   min-height: 100vh;  
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -14,20 +14,62 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70vw;        /* Passe à 95vw pour qu'elle prenne presque toute la largeur de l'écran */
-  max-width: none;    /* Retire la limite max pour qu'elle puisse grandir sans restriction */
+  width: 70vw;        
+  max-width: none;    
   height: 90vh;       /* Force une hauteur en pourcentage de l'écran */
-  object-fit: contain;/* Garde les proportions de l'image sans la déformer */
-  z-index: 1;         
+  object-fit: contain; 
+  z-index: 3;         /* Place la télévision au-dessus des autres éléments */
 }
 
 #piscine {
   position: absolute;
   top: 44%;          /* Remonte l'image pour combler l'espace vide en haut */
-  left: 49%;         /* Garde l'alignement horizontal centré dans le tube */
+  left: 48%;         /* Garde l'alignement horizontal centré dans le tube */
   transform: translate(-50%, -50%);
   width: 30vw;       /* Élargit légèrement pour toucher les bords gauche et droit */
   height: 50vh;      /* Agrandit en hauteur pour remplir tout l'écran noir */
   object-fit: cover; 
-  z-index: 0;        /* Reste bien derrière le cadre de la télévision */
+  z-index: 2;        /* Reste bien derrière le cadre de la télévision */
+}
+
+#homme {
+  position: absolute;
+  top: 44%;          /* Remonte l'image pour combler l'espace vide en haut */
+  left: 48%;         /* Garde l'alignement horizontal centré dans le tube */
+  transform: translate(-50%, -50%);
+  width: 30vw;       /* Élargit légèrement pour toucher les bords gauche et droit */
+  height: 50vh;      /* Agrandit en hauteur pour remplir tout l'écran noir */
+  object-fit: cover; 
+  z-index: 1;        /* Reste bien derrière le cadre de la télévision */
+}
+
+#nettoyeur {
+  position: absolute;
+  top: 44%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 30vw;          
+  height: auto;          /* Garde les proportions de l'image sans la couper */
+  object-fit: contain;   /* Affiche l'image en entier sans la rogner */
+  z-index: 0;            
+}
+
+
+
+#texte_ch1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90vw;       /* Ajuste la largeur pour qu'elle soit plus lisible */
+  max-width: 2000px;  /* Limite la largeur maximale pour les grands écrans */
+  color: #FFFFFF;    /* Texte en blanc pour contraster avec le fond sombre */
+  font-size: 2rem; /* Taille de police légèrement augmentée pour la lisibilité */
+  line-height: 1.6;  /* Espacement des lignes pour une meilleure lecture */
+  text-align: center;/* Centre le texte horizontalement */
+  z-index: 2;       
+}
+
+#texte_ch1 p, .texte_ch1 p {
+  font-size: 3.5rem; 
+  line-height: 1;  /* Resserre un peu l'interligne pour les très gros textes */
 }

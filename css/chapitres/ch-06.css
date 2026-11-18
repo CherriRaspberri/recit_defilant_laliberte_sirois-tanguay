@@ -1,0 +1,80 @@
+#ch06 {
+  background-color: #1A1A1A;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Conteneur du texte en haut */
+#tout_texte_ch6 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: auto;
+  z-index: 10;
+  overflow: hidden;
+}
+
+#tout_texte_ch6 p {
+  color: #FFFFFF !important;
+  font-size: 3.5rem !important;
+  line-height: 1.3;
+  margin: 0;
+  width: 100%;
+  white-space: normal;
+}
+
+#tout_texte_ch6 .p2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bloc-blanc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 5;
+  transform: translateX(-101%);
+}
+
+/* Zone centrale unique pour le diagramme, le "MAIS" et le conseil */
+.images_ch6 {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 1400px;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+/* Les 2 images et le "MAIS" sont empilés au même centre */
+.images_ch6 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gros-mais {
+  position: absolute;
+  font-size: 10vw;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin: 0;
+  pointer-events: none;
+}

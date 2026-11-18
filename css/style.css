@@ -8,11 +8,3 @@
 @import url("chapitres/ch-06.css");
 @import url("chapitres/ch-07.css");
 
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #483B37; /* Force le fond général en brun */
-  overflow-x: hidden;        /* Empêche tout défilement horizontal */
-}

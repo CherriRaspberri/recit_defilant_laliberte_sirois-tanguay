@@ -1,0 +1,71 @@
+#ch07 {
+  background-color: #1A1A1A;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Conteneur du texte en haut */
+#tout_texte_ch7 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: auto;          /* S'ajuste automatiquement à la hauteur du paragraphe */
+  z-index: 10;
+  overflow: hidden;      /* Empêche le bloc blanc de dépasser hors du texte */
+}
+
+#tout_texte_ch7 p {
+  color: #FFFFFF ;
+  font-size: 4rem ;
+  line-height: 1.4;
+  margin: 0;
+  width: 100%;
+}
+
+/* Superposition des paragraphes 2 et 3 */
+#tout_texte_ch7 .p2,
+#tout_texte_ch7 .p3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Le bloc blanc de transition */
+.bloc-blanc-ch7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;          /* 100 % de la boîte du texte uniquement, pas de l'écran */
+  background-color: #FFFFFF;
+  z-index: 5;
+  transform: translateX(-101%);
+}
+
+/* Conteneur agrandi et centré pour les images */
+.images_ch7 {
+  position: absolute;
+  top: 63%;             /* Légèrement plus bas pour laisser de l'air sous le gros texte */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;          
+  max-width: 1400px;    
+  height: 70vh;         
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.images_ch7 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* Garde les proportions de chaque image sans la couper */
+}
