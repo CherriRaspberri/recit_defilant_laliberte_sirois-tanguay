@@ -1,0 +1,25 @@
+#ch05 {
+    background-color: var(--color-primary);
+}
+
+#ch05-text-container {
+    padding: 0 5%;
+}
+
+#ch05-cleaner-img {
+    max-width: 400px;
+    transform-origin: 50% 50%;
+    display: block;
+}
+
+#ch05-title {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#ch05-text01 {
+    opacity: 0;
+}
+#ch05-text02 {
+    opacity: 0;
+}

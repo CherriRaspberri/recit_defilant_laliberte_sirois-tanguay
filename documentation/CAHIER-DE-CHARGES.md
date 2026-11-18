@@ -44,6 +44,9 @@ Vérification : chaque technique (CSS au défilement, GSAP + ScrollTrigger, Inte
 | *Fetch* externe et dataviz | Olivier | |
 | Chargement des chapitres (JSON) | Cédric | |
 | Structure commune (HTML, CSS de base, mise en page) | Ensemble | |
+| Extension GSAP : SplitText : chapitres 2 - 3 - 4 - 5 | Olivier | Effet de glissade sur le texte |
+| Extension GSAP : ScrambleText : chapitres 3 - 4 - 5 | Olivier | Effet de scramble sur le texte lors de la découverte des chapitres |
+| Extension GSAP : MotionPath : chapitres 3 - 4 - 5 | Olivier | Effet de déplacement à des points précis avec les composantes du nettoyeur  |
 
 ## 5. Le modèle de données
 
@@ -108,7 +111,7 @@ L'API sera choisie au cours du mer. 11 nov. Pour l'instant, décrivez l'idée.
 
 ## 9. Le calendrier de l'équipe (jusqu'au prototype du 13 nov.)
 
-| Semaine | [Prénom] | [Prénom] | 
+| Semaine | Olivier | Cédric | 
 |---|---|---|
 | 23 oct. | | |
 | 28 oct. | Olivier fini la structure du site | Cédric fini les calques | 
