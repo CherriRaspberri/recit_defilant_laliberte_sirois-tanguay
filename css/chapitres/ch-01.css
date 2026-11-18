@@ -1,7 +1,7 @@
 #ch01 {
   background-color: #483B37;
   position: relative;
-  width: 100%;        /* Utilise 100% au lieu de 100vw pour éviter le conflit avec la barre de défilement */
+  width: 100%;       
   min-height: 100vh;  
   margin: 0;
   padding: 0;
@@ -11,8 +11,8 @@
 
 #tv {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 72%;
   transform: translate(-50%, -50%);
   width: 70vw;        
   max-width: none;    
@@ -23,8 +23,8 @@
 
 #piscine {
   position: absolute;
-  top: 42%;          /* Remonte l'image pour combler l'espace vide en haut */
-  left: 48%;         /* Garde l'alignement horizontal centré dans le tube */
+  top: 52%;          /* Remonte l'image pour combler l'espace vide en haut */
+  left: 70%;         /* Garde l'alignement horizontal centré dans le tube */
   transform: translate(-50%, -50%);
   width: 30vw;       /* Élargit légèrement pour toucher les bords gauche et droit */
   height: 50vh;      /* Agrandit en hauteur pour remplir tout l'écran noir */
@@ -34,8 +34,8 @@
 
 #homme {
   position: absolute;
-  top: 42%;          /* Remonte l'image pour combler l'espace vide en haut */
-  left: 48%;         /* Garde l'alignement horizontal centré dans le tube */
+  top: 52%;          /* Remonte l'image pour combler l'espace vide en haut */
+  left: 70%;         /* Garde l'alignement horizontal centré dans le tube */
   transform: translate(-50%, -50%);
   width: 30vw;       /* Élargit légèrement pour toucher les bords gauche et droit */
   height: 50vh;      /* Agrandit en hauteur pour remplir tout l'écran noir */
@@ -45,8 +45,8 @@
 
 #nettoyeur {
   position: absolute;
-  top: 40%;
-  left: 48%;
+  top: 52%;
+  left: 70%;
   transform: translate(-50%, -50%);
   width: 30vw;          
   height: auto;          /* Garde les proportions de l'image sans la couper */
@@ -54,21 +54,41 @@
   z-index: 0;            
 }
 
-
-#texte_ch1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60vw;       /* Ajuste la largeur pour qu'elle soit plus lisible */
-  max-width: 1000px;  /* Limite la largeur maximale pour les grands écrans */
-  color: #FFFFFF;    /* Texte en blanc pour contraster avec le fond sombre */
-  font-size: 0.5rem; /* Taille de police légèrement augmentée pour la lisibilité */
-  line-height: 1.6;  /* Espacement des lignes pour une meilleure lecture */
-  text-align: center;/* Centre le texte horizontalement */
-  z-index: 2;       
+#ch01-text-container {
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
-#texte_ch1 p, .texte_ch1 p {
-  font-size: 1.25rem; 
-  line-height: 1;  /* Resserre un peu l'interligne pour les très gros textes */
+#ch01-title {
+  color: #101010;
+  transform: translateX(-20px);
+}
+
+/* Boîte du texte à gauche de la télévision */
+#ch01-text {
+  position: relative;
+  width: 44% !important;
+  max-width: 650px !important;
+  min-height: 220px;
+  margin: 0 !important;
+  z-index: 15;
+}
+
+/* Paragraphes empilés et calibrés pour ne pas toucher la télé */
+#ch01-p1,
+#ch01-p2,
+#ch01-p3 {
+  color: #101010 !important;
+  font-size: 1.7rem !important;
+  line-height: 1.35 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+#ch01-p2,
+#ch01-p3 {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
 }

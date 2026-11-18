@@ -9,54 +9,15 @@
   overflow: hidden;
 }
 
-/* Conteneur du texte en haut */
-#tout_texte_ch7 {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: auto;          /* S'ajuste automatiquement à la hauteur du paragraphe */
-  z-index: 10;
-  overflow: hidden;      /* Empêche le bloc blanc de dépasser hors du texte */
-}
-
-#tout_texte_ch7 p {
-  color: #FFFFFF ;
-  font-size: 1.4rem ;
-  line-height: 1.4;
-  margin: 0;
-  width: 100%;
-}
-
-/* Superposition des paragraphes 2 et 3 */
-#tout_texte_ch7 .p2,
-#tout_texte_ch7 .p3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* Le bloc blanc de transition */
-.bloc-blanc-ch7 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;          /* 100 % de la boîte du texte uniquement, pas de l'écran */
-  background-color: #FFFFFF;
-  z-index: 5;
-  transform: translateX(-101%);
-}
-
 /* Conteneur agrandi et centré pour les images */
 .images_ch7 {
   position: absolute;
-  top: 63%;             /* Légèrement plus bas pour laisser de l'air sous le gros texte */
+  top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw;          
-  max-width: 1400px;    
-  height: 70vh;         
+  width: 90vw;
+  max-width: 1400px;
+  height: 58vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,5 +28,65 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: contain;  /* Garde les proportions de chaque image sans la couper */
+  object-fit: contain;  
+}
+
+#ch07-text-container {
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ch07-title {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+/* Boîte du texte centrée au milieu */
+#ch07-text {
+  position: relative;
+  overflow: hidden;
+  width: 88% ;
+  max-width: 1300px ;
+  margin: 0 auto;
+  min-height: 170px;
+  z-index: 15;
+}
+
+/* Paragraphes blancs et centrés, calibrés pour tenir sur 3-4 lignes */
+#ch07-p1,
+#ch07-p2,
+#ch07-p3 {
+  color: #FFFFFF !important;
+  font-size: 1.9rem !important;
+  line-height: 1.3 !important;
+  text-align: center ;
+  width: 100% ;
+  max-width: 100% ;
+  margin: 0 ;
+}
+
+/* Force p2 et p3 à rester empilés exactement sur p1 */
+#ch07-p2,
+#ch07-p3 {
+  position: absolute ;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+
+/* Bloc blanc de balayage */
+.bloc-blanc-ch7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 20;
+  transform: translateX(-101%);
 }
