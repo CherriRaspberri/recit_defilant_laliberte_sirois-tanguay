@@ -1,7 +1,7 @@
 [
     {
         "id": "ch01",
-        "titre": "Chapitre 01 : ",
+        "titre": "Chapitre 01 : la naissance du nettoyeur automatique",
         "textes": [
             "...",
             "...",
@@ -86,7 +86,7 @@
     },
     {
         "id": "ch06",
-        "titre": "Chapitre 06 : ",
+        "titre": "Chapitre 06 : la chute des manches télescopiques",
         "textes": [
             "...",
             "...",
@@ -102,7 +102,7 @@
     },
     {
         "id": "ch07",
-        "titre": "Chapitre 07 : ",
+        "titre": "Chapitre 07 : la solution du problème entre les manches télescopiques et les nettoyeurs automatiques",
         "textes": [
             "...",
             "...",

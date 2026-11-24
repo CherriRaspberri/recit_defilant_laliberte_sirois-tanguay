@@ -1,0 +1,116 @@
+#ch06 {
+  background-color: #1A1A1A;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bloc-blanc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 5;
+  transform: translateX(-101%);
+}
+
+/* Zone centrale unique pour le diagramme, le "MAIS" et le conseil */
+.images_ch6 {
+  position: absolute;
+  top: 55%;             /* Légèrement plus bas pour laisser de l'air sous le gros texte */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;          
+  max-width: 1400px;    
+  height: 70vh;         
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+/* Les 2 images et le "MAIS" sont empilés au même centre */
+.images_ch6 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gros-mais {
+  position: absolute;
+  font-size: 10vw;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin: 0;
+  pointer-events: none;
+}
+
+#ch06-text-container {
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+#ch06-title {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 1%;
+}
+
+/* Boîte du texte centrée au milieu */
+#ch06-text {
+  position: relative;
+  overflow: hidden;
+  width: 88% ;
+  max-width: 1300px ;
+  margin: 0 auto;
+  min-height: 170px;
+  z-index: 15;
+}
+
+/* Paragraphes blancs et centrés, calibrés pour tenir sur 3-4 lignes */
+#ch06-p1,
+#ch06-p2,
+#ch06-p3 {
+  color: #FFFFFF !important;
+  font-size: 1.9rem !important;
+  line-height: 1.3 !important;
+  text-align: center ;
+  width: 100% ;
+  max-width: 100% ;
+  margin: 0 ;
+}
+
+/* Force p2 et p3 à rester empilés exactement sur p1 */
+#ch06-p2,
+#ch06-p3 {
+  position: absolute ;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+
+/* Bloc blanc de balayage */
+.bloc-blanc-ch6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 20;
+  transform: translateX(-101%);
+}
