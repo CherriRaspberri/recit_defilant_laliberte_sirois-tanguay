@@ -48,3 +48,21 @@ Faire une vrai animation avec une de mes assets.
 
 ### Si j'ai utilisé l'IA comme source pour un média : qu'est-ce que j'ai préparé moi-même, et qu'est-ce que ça m'a appris?
 Non pas de IA.
+
+
+## Questions troisième semaine :
+
+### Qu'est-ce que j'ai accompli depuis le dernier bloc?
+J'ai fais le html, css et java Script du chapitre 1-6-7 et ajouter des assets de plus.
+
+### Quelle a été ma principale difficulté et comment je l'ai surmontée?
+Comprendre le Java Script dans mes pages et j'ai utilise de IA pour régler mes problèmes que j'étais bloqué.
+
+### Qu'est-ce que j'ai appris que je ne savais pas avant?
+J'ai appris comment empiler des images ou du texte et les faires apparaîtres un à un avec un animation.
+
+### Quelle est ma prochaine étape concrète?
+Rendre le tout plus beau et améliorer le premier chapitre.
+
+### Si j'ai utilisé l'IA comme source pour un média : qu'est-ce que j'ai préparé moi-même, et qu'est-ce que ça m'a appris?
+Le IA ma appris comment bien placer et faire des animations qui ont un sense. Aussi ça ma aider a débuger mon js et mon css pour le chapitre 7.
