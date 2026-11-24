@@ -60,17 +60,40 @@ Aucune IA n'a été utilisée de mon côté.
 - J'ai trouvé mes assets pour le projet (Temporaire? Changements très possibles)
 - J'ai préparé le code de base du projet (index.html + main.js + style.css)
 - J'ai préparé le data.json pour accueillir nos textes et images.
-- J'ai link et testé JSAP.
+- J'ai link et testé GSAP.
 - J'ai fait des tests de pull request avec GitHub. 
 
 ### Quelle a été ma principale difficulté et comment je l'ai surmontée?
-Tester le JSAP a été le plus difficile, puisque je n'avais jamais utilisé JSAP dans un projet auparavant.
+Tester le JSAP a été le plus difficile, puisque je n'avais jamais utilisé GSAP dans un projet auparavant.
 
 ### Qu'est-ce que j'ai appris que je ne savais pas avant?
-Toute la librairie JSAP m'est nouvelle. 
+Toute la librairie GSAP m'est nouvelle. 
 
 ### Quelle est ma prochaine étape concrète?
 Commencer les animations + mise en marche de mes chapitres (animations).
+
+### Si j'ai utilisé l'IA comme source pour un média : qu'est-ce que j'ai préparé moi-même, et qu'est-ce que ça m'a appris?
+Aucune IA n'a été utilisée de mon côté.
+
+---
+
+## PRODUCTION (partie 02 : )
+
+### Qu'est-ce que j'ai accompli depuis le dernier bloc? 
+- J'ai complété l'animation de base de mon chapitre 02.
+- J'ai animé le texte de mes chapitre 03 - 04 - 05.
+- J'ai changé des animations au défilement par des animations GSAP.
+- J'ai pull tout mon travail sur GitHub.
+
+### Quelle a été ma principale difficulté et comment je l'ai surmontée?
+Ma principale difficulté a été de comprendre comment les tomelines de GSAP fonctionnaient, avec leur temps, pour pouvoir animer un élément au défilement et non en secondes.
+
+### Qu'est-ce que j'ai appris que je ne savais pas avant?
+J'ai appri comment GSAP fonctionnait : de ses animations à ses extensions.
+
+### Quelle est ma prochaine étape concrète?
+- Animer les chapitres 03 - 04 - 05.
+- Apprendre comment animer avec GSAP et une spritesheet.
 
 ### Si j'ai utilisé l'IA comme source pour un média : qu'est-ce que j'ai préparé moi-même, et qu'est-ce que ça m'a appris?
 Aucune IA n'a été utilisée de mon côté.

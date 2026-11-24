@@ -23,11 +23,12 @@
     Title : 
     - Starts invisible to appear later with animations
     - Has a small transform to move later with animatons
-*/
+
+    
 #ch02-title {
-    opacity: 0;
     transform: translateX(-20px);
 }
+*/
 
 /*
     Text box :
@@ -74,6 +75,9 @@
 
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+
+    /*Variable for cleaner size (used for cleaner and clean trail)*/
+    --cleaner-size: 20vw;
 }
 
 /* 
@@ -88,7 +92,7 @@
     left: 0;
 
     width: 100%;
-    height: 28px;
+    height: 30px;
 
     background: repeating-linear-gradient(90deg,
             transparent 0px,
@@ -187,7 +191,7 @@
 
 /* #endregion */
 
-/* #region cleaner and clean trail */
+/* #region cleaner + clean trail + pool details */
 
 /*
     Cleaner : 
@@ -196,11 +200,20 @@
     Cleaner-img :
     - turned 90degs to make it look like its sticking to the pool wall
     - removed any possible interaction with it
+
+    Clean-trail :
+    - Starts off-screen on the left
+    - Follows the cleaner with a GSAP animation
+
+    Drain-img :
+    - stays in the pool, but scales with the page
 */
 #cleaner {
     position: absolute;
     top: 50%;
     left: 0%;
+
+    width: var(--cleaner-size);
     
     transform: translate(-50%, -50%);
     transform-origin: 50% 50%;
@@ -209,10 +222,51 @@
 }
 
 #cleaner-img {
-    max-width: 400px;
+    max-width: 100%;
     transform-origin: 50% 50%;
     transform: rotate(90deg);
     display: block;
+}
+
+#clean-trail {
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 100vw;
+    height: calc(var(--cleaner-size) * 0.6);
+
+    background-color: var(--color-primary-highlights);
+    opacity: 0.45;
+    clip-path: inset(0 100% 0 0);
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+}
+
+#drainer-img {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+
+    max-width: 7.5%;
+    min-width: 150px;
+
+    z-index: -1;
 }
 
 /* #endregion */
