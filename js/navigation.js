@@ -18,14 +18,14 @@ export function createNavigation(chapterList) {
         const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         // Smooths the automatic scrolling when a new chapter is chosen in the list
         document.getElementById(chapterID).scrollIntoView({
-          behavior: reduced ? auto : "smooth"
+          behavior: reduced ? "auto" : "smooth"
         });
       },
       // Updates the activeChapterIndex in the data()
       updateActive() {
         // Checks if the chapter is in the middle of the window
         const middle = window.innerHeight / 2;
-        this.chapterList.forEach((chapter, index) => {
+        this.chapters.forEach((chapter, index) => {
           // Fetches current chapter ID
           const section = document.getElementById(chapter.id);
           // If the top of the section is smaller than the middle of the window height, the current section becomes the active chapter
@@ -33,15 +33,15 @@ export function createNavigation(chapterList) {
             this.activeChapterIndex = index;
           }
         });
-      },
-      // Triggers when the component is fully created
-      // Updates the activeChapterIndex automatically
-      mounted() {
-        window.addEventListener("scroll", this.updateActive, {
-          passive: true
-        });
-        this.updateActive();
       }
+    },
+    // Triggers when the component is fully created
+    // Updates the activeChapterIndex automatically
+    mounted() {
+      window.addEventListener("scroll", this.updateActive, {
+        passive: true
+      });
+      this.updateActive();
     }
-  }).mount();
+  }).mount("#chapter-navigation");
 }

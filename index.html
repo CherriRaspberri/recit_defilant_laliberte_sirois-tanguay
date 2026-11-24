@@ -19,20 +19,21 @@
     <main id="recit">
         <!-- Chapter navigation (Vue component) -->
         <div id="chapter-navigation" v-cloak>
-            <nav class="chapter-nav">
-                <ol>
+            <nav class="chapter-nav shrikhand-regular">
+                <ul>
                     <li v-for="(chapter, index) in chapters" :key="chapter.id">
                         <a :href="'#' + chapter.id" :class="{
-                            'active': index === chapter.id
+                            'active': index === activeChapterIndex
                         }" @click.prevent="goTo(chapter.id)">
-                            {{ chapter.title }}
+                            <!-- Active chapter indicator : only shows the number, not the full ID -->
+                            {{ chapter.id.replace(/^ch/, "") }}
                         </a>
                     </li>
-                </ol>
+                </ul>
             </nav>
         </div>
 
-        <section id="ch01">
+        <section class="chapter" id="ch01">
             <div class="ch01-text-container" id="ch01-text-container">
                 <div class="title shrikhand-regular" id="ch01-title">
                     <h2>Chapitre 01 : La création du nettoyeur</h2>
@@ -273,7 +274,7 @@
             </div>
         </section>
 
-        <section id="ch06">
+        <section class="chapter" id="ch06">
             <div class="ch06-text-container" id="ch06-text-container">
                 <div class="title shrikhand-regular" id="ch06-title">
                     <h2>Chapitre 06 : Les problèmes</h2>
@@ -300,7 +301,7 @@
             </div>
         </section>
 
-        <section id="ch07">
+        <section class="chapter" id="ch07">
             <div class="ch07-text-container" id="ch07-text-container">
                 <div class="title shrikhand-regular" id="ch07-title">
                     <h2>Chapitre 06 : Les solutions</h2>
@@ -349,8 +350,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomWiggle.min.js"></script>
     <!-- Vue.js import : chapter selection handler -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13/dist/vue.global.prod.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13/dist/vue.global.js"></script>
     <!-- Local JavaScript imports : main.js will import every other JavaScript file -->
     <script type="module" src="js/main.js"></script>
 </body>
