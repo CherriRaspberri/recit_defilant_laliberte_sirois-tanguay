@@ -17,6 +17,22 @@
 
 <body>
     <main id="recit">
+        <!-- Chapter navigation (Vue component) -->
+        <div id="chapter-navigation" v-cloak>
+            <nav class="chapter-nav">
+                <ol>
+                    <li v-for="(chapter, index) in chapters" :key="chapter.id">
+                        <a :href="'#' + chapter.id" :class="{
+                            'active': index === chapter.id
+                        }" @click.prevent="goTo(chapter.id)">
+                            {{ chapter.title }}
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+
         <section class="chapter" id="ch01">
 
         </section>
@@ -41,7 +57,7 @@
         -->
         <section class="chapter" id="ch02">
             <div id="ch02-text-container">
-                <div class="title shrikhand-regular" >
+                <div class="title shrikhand-regular">
                     <h2 id="ch02-title">Chapitre 02 : L'évolution du nettoyeur</h2>
                 </div>
                 <div class="text-box contrail-one-regular" id="ch02-textbox">
