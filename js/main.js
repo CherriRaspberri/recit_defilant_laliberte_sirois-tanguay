@@ -20,8 +20,7 @@ const chaptersList = document.querySelectorAll(".chapter");
 // Creates an array made of all chapters 
 // Every chapter comes with their chapter id and title
 const chaptersArray = Array.from(chaptersList).map((section) => ({
-    id: section.id,
-    title: section.querySelector("h2").textContent
+    id: section.id
 }));
 // Adds the nav bar in the project
 window.nav = createNavigation(chaptersArray);
