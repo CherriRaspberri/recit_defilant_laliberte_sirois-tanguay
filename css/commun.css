@@ -23,13 +23,7 @@ h2 {
 
 .text-box {
     font-size: 1.5rem;
-    max-width: 800px;
     color: var(--text-color-primary);
-}
-
-.img-container {
-    display: flex;
-    justify-content: flex-end;
 }
 
 [v-cloak] {
@@ -108,4 +102,5 @@ h2 {
     color: #ffffff;
     font-weight: 700;
 }
+
 /* #endregion */

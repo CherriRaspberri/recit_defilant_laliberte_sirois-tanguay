@@ -1,26 +1,29 @@
 #ch03 {
-    background-color: var(--color-primary);
+    position: relative;
+
+    background-image: linear-gradient(to bottom, var(--color-primary), var(--color-third)),
+    linear-gradient(to top, transparent 50%, var(--color-third) 100%),
+    url("../../assets/images/ch-02/pool_texture.jpg");
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: cover, cover, 200px 200px;
+    background-blend-mode: lighten, normal, normal;
+
+    padding: 2.5% 5%;
 }
 
-#ch03-text-container {
-    padding: 0 5%;
+#ch03-content-container {
+    display: flex;
+    flex-direction: row;
 }
 
 #ch03-cleaner-img {
-    max-width: 400px;
+    max-width: 800px;
     transform-origin: 50% 50%;
-    display: block;
 }
 
 #ch03-object-img {
     max-width: 400px;
     transform-origin: 50% 50%;
-    display: block;
-}
-
-#ch03-title {
-    opacity: 0;
-    transform: translateX(-20px);
 }
 
 #ch03-text01 {
