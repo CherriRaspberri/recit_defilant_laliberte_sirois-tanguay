@@ -34,26 +34,25 @@
         </div>
 
         <!-- API widget (Vue component) -->
-        <div class="pool-weather-widget" :class="{ 'is-ready': isGoodPoolWeather }">
+        <div class="pool-weather-widget">
             <!-- Widget image : returns either a ready or waiting image depending on if isGoodPoolWeather is true or false -->
-            <img class="pool-weather-icon" :src="isGoodPoolWeather ? '/img/cleaner-ready.png' : '/img/weather-wait.png'"
-                :alt="isGoodPoolWeather ? 'Pool cleaner ready' : 'Wait to clean pool'" />
+            <img class="pool-weather-icon" :src="isGoodPoolWeather() ? './assets/images/widget_sun_img.jpg' : './assets/images/widget_rain_img.jpg'" :alt="isGoodPoolWeather() ? 'Pool cleaner ready' : 'Wait to clean pool'" />
 
             <!-- Widget information : displays the weather status and other relevant information -->
-            <div class="pool-weather-info">
-                <div v-else>
-                    <p class="pool-weather-cta">
-                        {{ isGoodPoolWeather ? "Va dehors et utilise ton nettoyeur!" : "Attends qu'il fasse plus beau."
+            <div class="pool-weather-info-container" v-cloak>
+                <div>
+                    <p class="pool-weather-text">
+                        {{ isGoodPoolWeather() ? "Va dehors et utilise ton nettoyeur!" : "Attends qu'il fasse plus beau."
                         }}
                     </p>
-                    <p class="pool-weather-meta">
-                        {{ Math.round(temperatures) }}°C | {{ rain > 0 ? `Pluie (${rain} mm)` : "Pas de pluie" }}
+                    <p class="pool-weather-stats">
+                        {{ temperature }}°C | {{ rain > 0 ? `Pluie (${rain} mm)` : "Pas de pluie" }}
                     </p>
                 </div>
             </div>
         </div>
 
-        <div id="barre-progression" v-cloak>
+        <div id="barre-progression">
             <div class="progression" :style="{ transform: 'scaleX(' + progress + ')' }"></div>
         </div>
 

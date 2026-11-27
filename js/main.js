@@ -11,6 +11,11 @@ import "./chapitres/ch-06.js";
 import "./chapitres/ch-07.js";
 
 import { createNavigation } from "./navigation.js";
+import { createProgressBar } from "./navigation.js";
+
+// Vue component implementation - Progress bar - Cédric Sirois-Tanguay - 2026
+window.nav = createProgressBar();
+
 //---
 // Vue component implementation - Navigation bar - Olivier Laliberté - 2026
 
@@ -57,16 +62,14 @@ async function loadRain() {
     return data.hourly.rain[0];
 }
 
-// Creates widget with API 
-// 
-// Variable instances
+// API variable instances
 let temperatures;
 let rain;
+// API const instances
+const GOOD_TEMP = 20;
+const NO_RAIN = 0;
 
-function isGoodPoolWeather() {
-    // TODO : return true or false depending on the temperature and the rain %
-}
-
+// Fetches weather from API
 async function showWeather() {
     // Requests to API - puts received values into variables
     try {
@@ -81,12 +84,45 @@ async function showWeather() {
         // Rain : 0 (sunny)
         rain = 0;
     }
-
-    // TODO : Widget here
 }
 
-showWeather();
-import { createProgressBar } from "./navigation.js";
+// Sends data to widget in HTML
+// 2 variables of data : 
+// - temperature : checks levels of temp
+// - rain : checks levels of rain in mm
+// function : isGoodPoolWeather : returns a boolean
+function createWeatherWidget(temp, rain) {
+    return Vue.createApp({
+        data() {
+            return {
+                temperature: temp,
+                rain: rain
+            }
+        },
+        methods: {
+            // Returns true or false depending on the temperature and the rain %
+            isGoodPoolWeather() {
+                let isGoodWeather = false;
+                // Checks if there is no rain outside
+                if (rain == NO_RAIN) {
+                    // Checks if the tempearture is equal or above 
+                    if (temp >= GOOD_TEMP) {
+                        isGoodWeather = true;
+                    }
+                }
+                // Returns a bool
+                return isGoodWeather;
+            }
+        }
+    }).mount(".pool-weather-widget");
 
+}
 
-window.nav = createProgressBar();
+// Init : used to initialize everything made with async functions
+async function init(){
+    // Weather widget creation
+    await showWeather();
+    console.log(`Temp : ${temperatures} | Rain : ${rain}mm`);
+    createWeatherWidget(temperatures, rain);
+}
+init();
