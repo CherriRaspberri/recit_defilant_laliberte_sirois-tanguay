@@ -1,5 +1,5 @@
 // ScrollTrigger setup
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, SplitText, CustomEase, CustomWiggle);
 
 // Local JS files imports
 import "./chapitres/ch-01.js";

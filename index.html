@@ -78,8 +78,8 @@
         -->
         <section class="chapter" id="ch02">
             <div id="ch02-text-container">
-                <div class="title shrikhand-regular" id="ch02-title">
-                    <h2>Chapitre 02 : L'évolution du nettoyeur</h2>
+                <div class="title shrikhand-regular" >
+                    <h2 id="ch02-title">Chapitre 02 : L'évolution du nettoyeur</h2>
                 </div>
                 <div class="text-box contrail-one-regular" id="ch02-textbox">
                     <p id="ch02-text01">
@@ -106,9 +106,7 @@
                     <div class="reflections"></div>
                 </div>
 
-                <div id="cleaner">
-                    <img src="./assets/images/temp/OL_nettoyeur_vue_dessus.png" alt="Cleaner" id="cleaner-img">
-                </div>
+                <!--Cleaner + clean trail-->
                 <div id="clean-trail">
                     <!--
                     <div id="img-container">
@@ -118,6 +116,12 @@
                     </div>
                     -->
                 </div>
+                <div id="cleaner">
+                    <img src="./assets/images/temp/OL_nettoyeur_vue_dessus.png" alt="Cleaner" id="cleaner-img">
+                </div>
+
+                <!--Pool details-->
+                <img src="./assets/images/ch-02/temp_pool_drain.png" alt="Drainer" id="drainer-img">
             </div>
         </section>
 
@@ -320,9 +324,14 @@
         </section>
     </main>
 
-    <!-- GSAP + ScrollTrigger imports : animations -->
+    <!-- GSAP + ScrollTrigger + extensions imports : animations -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!--SplitText-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <!--Custom Ease + Wiggle-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomWiggle.min.js"></script>
     <!-- Vue.js import : chapter selection handler -->
     <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13/dist/vue.global.prod.js">
     </script>
