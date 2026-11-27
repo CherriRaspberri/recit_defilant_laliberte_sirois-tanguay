@@ -1,6 +1,6 @@
 # JOURNAL : Olivier Laliberté
 
-## PRÉPRODUCTION 
+## PRÉPRODUCTION ( partie 01 )
 
 ### Étape 1 : Brainstorm
 
@@ -53,7 +53,7 @@ Aucune IA n'a été utilisée de mon côté.
 
 ---
 
-## PRODUCTION (partie 01) :
+## PRODUCTION ( partie 02 )
 
 ### Qu'est-ce que j'ai accompli depuis le dernier bloc? 
 - J'ai préparé l'arborescence du projet. 
@@ -77,7 +77,7 @@ Aucune IA n'a été utilisée de mon côté.
 
 ---
 
-## PRODUCTION (partie 02 : )
+## PRODUCTION ( partie 03 )
 
 ### Qu'est-ce que j'ai accompli depuis le dernier bloc? 
 - J'ai complété l'animation de base de mon chapitre 02.
@@ -97,3 +97,16 @@ J'ai appri comment GSAP fonctionnait : de ses animations à ses extensions.
 
 ### Si j'ai utilisé l'IA comme source pour un média : qu'est-ce que j'ai préparé moi-même, et qu'est-ce que ça m'a appris?
 Aucune IA n'a été utilisée de mon côté.
+
+## BETA ( partie 04 )
+
+### Qu'est-ce que j'ai accompli depuis le dernier bloc?
+
+
+### Quelle a été ma principale difficulté et comment je l'ai surmontée?
+
+### Qu'est-ce que j'ai appris que je ne savais pas avant?
+
+### Quelle est ma prochaine étape concrète?
+
+### Si j'ai utilisé l'IA comme source pour un média : qu'est-ce que j'ai préparé moi-même, et qu'est-ce que ça m'a appris?
