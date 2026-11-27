@@ -94,10 +94,13 @@
         - Water movement animation in the pool.
         -->
         <section class="chapter" id="ch02">
+            <!-- Contains title and text -->
             <div id="ch02-text-container">
+                <!-- Title -->
                 <div class="title shrikhand-regular">
                     <h2 id="ch02-title">Chapitre 02 : L'évolution du nettoyeur</h2>
                 </div>
+                <!-- Text box -->
                 <div class="text-box contrail-one-regular" id="ch02-textbox">
                     <p id="ch02-text01">
                         Les débuts hydrauliques (1970-1980) : Branchés sur la filtration, ils se déplaçaient de façon
@@ -116,47 +119,57 @@
                 </div>
             </div>
 
+            <!-- Contains the pool, cleaner, and trail -->
             <div id="pool-container">
-                <!--Pool ripples-->
+                <!-- Pool ripples -->
                 <div id="water-layer">
                     <div class="wave wave-front"></div>
                     <div class="reflections"></div>
                 </div>
 
-                <!--Cleaner + clean trail-->
-                <div id="clean-trail">
-                    <!--
-                    <div id="img-container">
-                        <img src="..." alt="img_evolution_01" id="img-evolution-01">
-                        <img src="..." alt="img_evolution_02" id="img-evolution-02">
-                        <img src="..." alt="img_evolution_03" id="img-evolution-03">
-                    </div>
-                    -->
-                </div>
+                <!-- Cleaner + clean trail -->
+                <div id="clean-trail"></div>
                 <div id="cleaner">
                     <img src="./assets/images/temp/OL_nettoyeur_vue_dessus.png" alt="Cleaner" id="cleaner-img">
                 </div>
 
-                <!--Pool details-->
+                <!-- Pool details -->
                 <img src="./assets/images/ch-02/temp_pool_drain.png" alt="Drainer" id="drainer-img">
             </div>
         </section>
 
         <!--
         Chapter 03 : 
-        Cleaner animation. The cleaner moves on the screen to let space for a piece coming out of it. 
+        Cleaner animation. The cleaner shakes, makes its broom pop out, and moves on the screen to its proper place. The broom moves to its proper place with a drag animation. 
 
         Animations :
-        - The cleaner moves to the left to make space for the brush to come out of it.
-        - The brush comes out of the cleaner and rotates to show its shape and details.
+        *with scroll*
+        - The cleaner shakes to indicate that something is coming.
+        - The cleaner squishes while the broom pops out.
+        - The cleaner moves to the left to make space for the broom to come out of it.
+
+        - The broom comes out of the cleaner.
+        - The broom moves to its proper place with a drag animation.
+
+        *idle*
+        - Background water movement animation.
         -->
         <section class="chapter" id="ch03">
+            <!-- Water background -->
+            <div id="ch03-water-bg" aria-hidden="true"></div>
+
+            <!-- Title -->
             <div class="title shrikhand-regular" id="ch03-title">
                 <h2>Chapitre 03 : <br> Les composantes du nettoyeur - le balai</h2>
             </div>
-            <!-- Ch03 content container : -->
+            <!-- 
+                Ch03 content container : 2 columns 
+                - Left column : text box 1 with cleaner
+                - Right column : text box 2 with broom
+            -->
             <div id="ch03-content-container">
-                <div class="text-box contrail-one-regular" id="ch03-textbox-01">
+                <!-- Column 01 -->
+                <div class="text-box contrail-one-regular ch03-element" id="ch03-textbox-01">
                     <p id="ch03-text01">
                         Le rôle du balai est de décoller mécaniquement les saletés incrustées, les algues et le
                         biofilm
@@ -173,8 +186,11 @@
                     </div>
                 </div>
 
-                <div class="text-box contrail-one-regular" id="ch03-textbox-02">
+                <!-- Column 02 -->
+                <div class="text-box contrail-one-regular ch03-element" id="ch03-textbox-02">
                     <div class="object" id="ch03-object">
+                        <!-- Object highlight : yellow circle behind to show off the broom-->
+                        <div id="ch03-object-highlight"></div>
                         <img src="./assets/images/temp/OL_piece_01.png" alt="Broom" id="ch03-object-img">
                     </div>
 

@@ -22,6 +22,14 @@
     --color-fourth: #4490a5;
 
     --text-color-primary: #0b314e;
+
+    /* Variables used for background in chapters 03 - 04 - 05 */
+    --water-bg-core: var(--color-white);
+    --water-bg-bright: var(--color-primary-highlights);
+    --water-bg-mid: var(--color-primary);
+    --water-bg-base-light: var(--color-fourth);
+    --water-bg-base-mid: var(--color-third);
+    --water-bg-base-dark: var(--text-color-primary);
 }
 
 /* Google fonts */
