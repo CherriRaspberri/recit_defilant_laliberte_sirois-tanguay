@@ -1,5 +1,5 @@
 #ch04 {
-    background-color: var(--color-primary);
+    background: linear-gradient(to bottom, var(--color-third), var(--color-fourth));
 }
 
 #ch04-text-container {
