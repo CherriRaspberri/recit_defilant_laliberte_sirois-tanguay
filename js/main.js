@@ -9,3 +9,8 @@ import "./chapitres/ch-04.js";
 import "./chapitres/ch-05.js";
 import "./chapitres/ch-06.js";
 import "./chapitres/ch-07.js";
+
+import { createProgressBar } from "./navigation.js";
+
+
+window.nav = createProgressBar();

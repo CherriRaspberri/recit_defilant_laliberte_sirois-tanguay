@@ -50,3 +50,32 @@ export function createNavigation(chapters) {
   }).mount("#navigation");
 }
 */
+
+export function createProgressBar() {
+    return Vue.createApp({
+
+        data() {
+            return {
+                progress: 0
+            }
+        },
+        methods: {
+            updateProgress() {
+                const max = document.documentElement.scrollHeight - window.innerHeight;
+                this.progress = max > 0 ? window.scrollY / max : 0;
+            }
+        },
+
+        mounted(){
+
+            window.addEventListener("scroll", this.updateProgress,{
+                passive: true
+            });
+
+            this.updateProgress();
+        }
+
+    }).mount
+    ("#barre-progression");
+}
+
