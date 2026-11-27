@@ -32,6 +32,24 @@
                 </ul>
             </nav>
         </div>
+        
+        <!-- API widget (Vue component) -->
+        <div class="pool-weather-widget" :class="{ 'is-ready': isGoodPoolWeather }">
+            <!-- Widget image : returns either a ready or waiting image depending on if isGoodPoolWeather is true or false -->
+            <img class="pool-weather-icon" :src="isGoodPoolWeather ? '/img/cleaner-ready.png' : '/img/weather-wait.png'" :alt="isGoodPoolWeather ? 'Pool cleaner ready' : 'Wait to clean pool'"/>
+
+            <!-- Widget information : displays the weather status and other relevant information -->
+            <div class="pool-weather-info">
+                <div v-else>
+                    <p class="pool-weather-cta">
+                        {{ isGoodPoolWeather ? "Va dehors et utilise ton nettoyeur!" : "Attends qu'il fasse plus beau." }}
+                    </p>
+                    <p class="pool-weather-meta">
+                        {{ Math.round(temperatures) }}°C | {{ rain > 0 ? `Pluie (${rain} mm)` : "Pas de pluie" }}
+                    </p>
+                </div>
+            </div>
+        </div>
 
         <section class="chapter" id="ch01">
             <div class="ch01-text-container" id="ch01-text-container">
