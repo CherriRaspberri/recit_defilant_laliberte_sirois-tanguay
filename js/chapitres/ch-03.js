@@ -57,6 +57,9 @@ mm.add("(prefers-reduced-motion: no-preference)", () => {
     // Bool : checks if title animation has played or not
     let titleHasPlayed = false;
 
+    // ScrollTrigger : 
+    // - Pins the chapter for 4000 px to let the animations play out in the timeline properly
+    // - Has an update trigger : when it reaches 10% of its completion, trigger automatically the title animation
     const tlCh03 = gsap.timeline({
         scrollTrigger: {
             trigger: "#ch03",
@@ -78,7 +81,8 @@ mm.add("(prefers-reduced-motion: no-preference)", () => {
         }
     });
 
-    // Background animation (idle)
+    // Background animation (idle) :
+    // MOves the gradients to create a wave animation
     gsap.timeline({ repeat: -1, yoyo: true })
         .to("#ch03-water-bg", {
             xPercent: 8,
@@ -98,7 +102,7 @@ mm.add("(prefers-reduced-motion: no-preference)", () => {
         });
 
     tlCh03
-        // Step 1 : little shake-up animation
+        // Step 1 : little shake-up animation on the cleaner
         .to("#ch03-cleaner-img", {
             keyframes: [
                 { x: "-=6", y: -2, rotation: -1.5, duration: 0.08 },
@@ -135,23 +139,27 @@ mm.add("(prefers-reduced-motion: no-preference)", () => {
             ease: "back.out(1.7)"
         })
         // Step 3 : move items to their right location
+        // Moves cleaner to its original location
         .to("#ch03-cleaner-img", {
             x: 0,
             scale: 1,
             duration: 0.5,
             ease: "power4.out"
         })
+        // Scales down broom img
         .to("#ch03-object-img", {
             x: 0,
             scale: 1,
             duration: 1.05,
             ease: "power3.inOut"
         }, "<")
+        // Moves broom to its original position
         .to("#ch03-object-img", {
             y: 0,
             duration: 0.95,
             ease: "power2.out"
         }, "<0.1")
+        // Broom shake to make it look realistic
         .to("#ch03-object-img", {
             keyframes: [
                 { rotation: 18, duration: 0.35, ease: "power1.in" },
@@ -159,6 +167,7 @@ mm.add("(prefers-reduced-motion: no-preference)", () => {
                 { rotation: 0, duration: 0.35, ease: "sine.inOut" }
             ]
         }, "<")
+        // Yellow circle popping out behind the broom
         .fromTo(
             "#ch03-object-highlight",
             {
@@ -173,6 +182,7 @@ mm.add("(prefers-reduced-motion: no-preference)", () => {
             },
             ">"
         )
+        // Yellow circle scaling down
         .to("#ch03-object-highlight", {
             scale: 0.94,
             duration: 0.1,

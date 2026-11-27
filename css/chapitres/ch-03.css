@@ -1,6 +1,8 @@
 /* Olivier Laliberte - 2026 */
 /*
-
+    Chapter 03 : 
+    - Background : moving gradient tides to simulate waves (idle animation)
+    - Displays elements in two columns (1 img + 1 text-area) 
 */
 #ch03 {
     position: relative;
@@ -11,6 +13,7 @@
     height: 100vh;
     padding: 2.5% 7.5%;
 }
+/* gradient on top and at the bottom to give a smoother transition between chapters */
 #ch03::after {
     content: "";
     position: absolute;
@@ -21,7 +24,7 @@
         linear-gradient(to bottom, var(--color-primary) 0%, rgba(11, 49, 78, 0) 90px),
         linear-gradient(to top, var(--color-third) 0%, rgba(11, 49, 78, 0) 90px);
 }
-
+/* aligns everything horizontally into two columns */
 #ch03-content-container {
     display: flex;
     flex-direction: row;
@@ -31,7 +34,7 @@
 
     z-index: 1;
 }
-
+/* individual column style */
 .ch03-element {
     width: 50%;
     max-width: 800px;
@@ -39,11 +42,23 @@
 
 /* #region water background */
 
+/*
+    Water background :
+    - Simulates moving waves underwater
+    - Target of GSAP animation (idle : keeps playing even if the user does nothing)
+    - Multiple circular gradients to highlight rays of light coming from above
+    - Using SRGB to blend colors more smoothly 
+    - Using a filter to smooth even more the circular gradients and to boost the colors a little bit
+*/
 #ch03-water-bg {
     position: absolute;
+
     inset: -25%;
+
     z-index: 0;
+
     pointer-events: none;
+
     background-color: #096a78;
     background-color: var(--water-bg-base-mid);
     background-image:
@@ -69,20 +84,27 @@
             var(--water-bg-base-mid) 0%,
             var(--water-bg-base-light) 50%,
             var(--water-bg-base-dark) 100%);
-    filter: blur(7px) contrast(1.32) saturate(1.25);
+    filter: blur(7px) contrast(1.32);
 }
 
 /* #endregion */
 
 /* #region text areas */
 
+/* Puts title above bg gradients*/
+#ch03-title {
+    position: relative;
+    z-index: 5;
+}
+
+/* Aligns text */
 #ch03-textbox-01,
 #ch03-textbox-02 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/* puts text above elements and fixes bugs with GSAP animation */
 #ch03-text01,
 #ch03-text02 {
     position: relative;
@@ -97,6 +119,7 @@
 
 /* #region images */
 
+/* cleaner styles (prepped for animation) */
 #ch03-cleaner-img {
     position: relative;
 
@@ -105,7 +128,7 @@
 
     z-index: 2;
 }
-
+/* Aligns both object and highlight */
 #ch03-object {
     position: relative;
     display: flex;
@@ -113,21 +136,7 @@
     justify-content: center;
     z-index: 1;
 }
-
-#ch03-object-highlight {
-    position: absolute;
-
-    width: clamp(180px, 24vw, 320px);
-    aspect-ratio: 1 / 1;
-
-    border-radius: 50%;
-    background-color: var(--color-secondary);
-    z-index: 0;
-    opacity: 0;
-    transform: scale(0.2);
-    pointer-events: none;
-}
-
+/* broom styles (prepped for animation) */
 #ch03-object-img {
     position: relative;
 
@@ -136,6 +145,23 @@
     transform: scale(0.5);
 
     z-index: 1;
+}
+/* Yellow circle behind broom */
+#ch03-object-highlight {
+    position: absolute;
+
+    background-color: var(--color-secondary);
+
+    width: clamp(180px, 24vw, 320px);
+    aspect-ratio: 1 / 1;
+
+    opacity: 0;
+
+    border-radius: 50%;
+    z-index: 0;
+    
+    transform: scale(0.2);
+    pointer-events: none;
 }
 
 /* #endregion */
