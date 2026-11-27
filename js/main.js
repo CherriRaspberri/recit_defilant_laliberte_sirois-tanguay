@@ -86,3 +86,7 @@ async function showWeather() {
 }
 
 showWeather();
+import { createProgressBar } from "./navigation.js";
+
+
+window.nav = createProgressBar();

@@ -68,10 +68,10 @@
 /* Boîte du texte à gauche de la télévision */
 #ch01-text {
   position: relative;
-  width: 44% !important;
-  max-width: 650px !important;
+  width: 44%;
+  max-width: 650px;
   min-height: 220px;
-  margin: 0 !important;
+  margin: 0;
   z-index: 15;
 }
 
@@ -79,17 +79,17 @@
 #ch01-p1,
 #ch01-p2,
 #ch01-p3 {
-  color: #101010 !important;
-  font-size: 1.7rem !important;
-  line-height: 1.35 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
+  color: #101010;
+  font-size: 1.7rem;
+  line-height: 1.35;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
 }
 
 #ch01-p2,
 #ch01-p3 {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
