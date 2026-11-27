@@ -10,15 +10,15 @@
 
 /* Variables */
 :root {
-    --color-white: #FFF;
+  --color-white: #FFF;
 
-    --color-primary: #91DEF3;
-    --color-primary-highlights: #BCEDF6;
+  --color-primary: #91DEF3;
+  --color-primary-highlights: #BCEDF6;
 
-    --color-secondary: #FFE66D;
-    --color-secondary-highlights: #E3D26F;
+  --color-secondary: #FFE66D;
+  --color-secondary-highlights: #E3D26F;
 
-    --text-color-primary: #0b314e;
+  --text-color-primary: #00241B;
 }
 
 /* Google fonts */
@@ -27,8 +27,18 @@
   font-weight: 400;
   font-style: normal;
 }
+
 .contrail-one-regular {
   font-family: "Contrail One", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.progression {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 1;
+  height: 6px;
+  background: #FF2B47;
+  transform-origin: left;
 }
